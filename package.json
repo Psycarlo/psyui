@@ -1,5 +1,18 @@
 {
+  "name": "psyui",
+  "version": "0.0.1",
   "private": true,
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "psycarlo",
+    "url": "https://psybitcoin.com"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "pnpm@8.6.10",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -12,7 +25,5 @@
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.5.1",
     "turbo": "latest"
-  },
-  "packageManager": "pnpm@8.6.10",
-  "name": "psyui"
+  }
 }
