@@ -1,0 +1,58 @@
+<template>
+  <div
+    v-show="showAnnouncement"
+    class="text-brand-white bg-brand-primary flex h-11 items-center justify-between px-4"
+  >
+    <div></div>
+    <a
+      class="group inline-flex items-center gap-2 text-sm"
+      :href="announcementConfig.link"
+    >
+      {{ announcementConfig.icon }}
+      <span class="font-medium">{{ announcementConfig.title }}</span>
+      <div class="bg-brand-white mt-[2px] h-[2px] w-[2px] rounded-full"></div>
+      <span>{{ announcementConfig.description }}</span>
+      <!-- TODO: Arrow Icon Component? -->
+      <svg
+        class="stroke-brand-white -mr-1 ml-2 stroke-[1.5px]"
+        fill="none"
+        stroke="currentColor"
+        width="11"
+        height="11"
+        viewBox="0 0 10 10"
+        aria-hidden="true"
+      >
+        <path
+          class="opacity-0 transition group-hover:opacity-100"
+          d="M0 5h7"
+        ></path>
+        <path
+          class="transition group-hover:translate-x-[3px]"
+          d="M1 1l4 4-4 4"
+        ></path>
+      </svg>
+    </a>
+    <button
+      class="flex items-center justify-center"
+      @click="showAnnouncement = false"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="size-5"
+      >
+        <path
+          d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
+        />
+      </svg>
+    </button>
+  </div>
+</template>
+
+<script setup lang="ts">
+  import { announcementConfig } from '../config/site'
+  import { ref } from 'vue'
+
+  const showAnnouncement = ref(true)
+</script>

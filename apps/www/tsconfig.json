@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": [
+    "src",
+    "src/**/*.md",
+    ".vitepress/**/*.vue",
+    ".vitepress/**/*.mts",
+    ".vitepress/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
