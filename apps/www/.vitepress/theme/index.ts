@@ -1,5 +1,4 @@
 import Layout from './layout/MainLayout.vue'
-import DocsLayout from './layout/DocsLayout.vue'
 import './style.css'
 import type { Theme } from 'vitepress'
 
@@ -7,6 +6,6 @@ import type { Theme } from 'vitepress'
 export default {
   Layout,
   enhanceApp({ app }) {
-    app.component('docs', DocsLayout)
+    // app.component('docs', Layout)
   }
 } satisfies Theme

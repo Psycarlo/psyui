@@ -12,6 +12,7 @@
     "typecheck": "vue-tsc"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.22",
     "@unovis/ts": "^1.4.1",
     "@unovis/vue": "^1.4.1",
     "tailwind-variants": "^0.2.1",

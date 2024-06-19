@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="showAnnouncement"
-    class="text-brand-white bg-brand-primary flex h-11 items-center justify-between px-4"
+    class="text-brand-white bg-brand-primary hidden h-11 items-center justify-between px-4 sm:flex"
   >
     <div></div>
     <a

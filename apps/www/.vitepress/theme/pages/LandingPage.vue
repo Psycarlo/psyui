@@ -1,8 +1,102 @@
 <template>
-  <Announcement />
-  <h1 class="text-center">Soon</h1>
+  <main class="mx-auto flex max-w-screen-xl items-center px-4 pt-20">
+    <div
+      class="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6"
+    >
+      <div class="flex items-center gap-4">
+        <p class="text-xs font-medium uppercase text-slate-600">Built with</p>
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 18.813 16.327"
+            class="h-5 w-5"
+          >
+            <g transform="translate(-2 -3.9)" opacity="0.2">
+              <path
+                d="M17.386,3.9l-5.98,10.414L5.427,3.9H2l9.406,16.327L20.813,3.9Z"
+                transform="translate(0 0)"
+              />
+              <path
+                d="M13.408,7.663,11.258,3.9H8.1l5.308,9.138L18.716,3.9H15.625Z"
+                transform="translate(-2.002)"
+              />
+            </g>
+          </svg>
+          <p class="text-xs font-medium uppercase text-slate-600">Vue</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 27.211 16.327"
+            class="h-6 w-6"
+          >
+            <path
+              d="M15.606,6c-3.633,0-5.891,1.81-6.8,5.442,1.361-1.81,2.952-2.49,4.762-2.041a5.8,5.8,0,0,1,2.6,1.837,7.777,7.777,0,0,0,6.245,2.925c3.633,0,5.891-1.81,6.8-5.442-1.361,1.81-2.952,2.49-4.762,2.041a5.877,5.877,0,0,1-2.6-1.837A7.777,7.777,0,0,0,15.606,6M8.8,14.163c-3.633,0-5.891,1.81-6.8,5.442,1.361-1.81,2.952-2.49,4.762-2.041a5.877,5.877,0,0,1,2.6,1.837,7.777,7.777,0,0,0,6.245,2.925c3.633,0,5.891-1.81,6.8-5.442-1.361,1.81-2.952,2.49-4.762,2.041a5.877,5.877,0,0,1-2.6-1.837A7.777,7.777,0,0,0,8.8,14.163"
+              transform="translate(-2 -6)"
+              opacity="0.2"
+            />
+          </svg>
+          <p class="text-xs font-medium uppercase text-slate-600">
+            Tailwind CSS
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20.013 20.013"
+            class="h-5 w-5 stroke-slate-400"
+          >
+            <g transform="translate(-1.993 -1.993)">
+              <path
+                d="M6.744,4.325l7.82-1.267a4.456,4.456,0,0,1,5.111,3.686l1.267,7.82a4.456,4.456,0,0,1-3.686,5.111l-7.82,1.267a4.456,4.456,0,0,1-5.111-3.686L3.058,9.436A4.456,4.456,0,0,1,6.744,4.325"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+              <path
+                d="M7.252,7.7l7.9-1.28a1,1,0,0,1,1.147.828l.36,2.223-9.562,3.51-.67-4.134A1,1,0,0,1,7.252,7.7"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+          <p class="text-xs font-medium uppercase text-slate-600">
+            Headless UI
+          </p>
+        </div>
+      </div>
+      <h1 class="text-balance text-center text-7xl font-semibold">
+        Make your vue websites look 10x better
+      </h1>
+      <p class="text-balance text-center text-xl text-slate-700">
+        Copy paste beautiful vue components and use them to build beautiful
+        dashboards and trending websites. Free and open-source, accessible and
+        customizable.
+      </p>
+      <a
+        :href="siteConfig.links.github"
+        target="_blank"
+        class="group inline-flex items-center gap-2 rounded-md border border-slate-200 px-4 py-1 font-medium shadow-sm transition-all duration-200 hover:bg-slate-50"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 19.516"
+          class="h-5 w-5"
+        >
+          <path
+            d="M12,2A10.007,10.007,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31c-2.77.6-3.36-1.34-3.36-1.34A2.69,2.69,0,0,0,5.03,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1.03,2.148,2.148,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92A3.873,3.873,0,0,1,6.65,8.79a3.577,3.577,0,0,1,.1-2.64s.84-.27,2.75,1.02a9.635,9.635,0,0,1,5,0c1.91-1.29,2.75-1.02,2.75-1.02a3.577,3.577,0,0,1,.1,2.64,3.873,3.873,0,0,1,1.03,2.71c0,3.82-2.34,4.66-4.57,4.91a2.386,2.386,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10.009,10.009,0,0,0,12,2"
+            transform="translate(-2 -2)"
+          />
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </main>
 </template>
 
 <script setup lang="ts">
-  import Announcement from '../components/Announcement.vue'
+  import { siteConfig } from '../config/site'
 </script>
