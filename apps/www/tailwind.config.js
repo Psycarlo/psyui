@@ -14,7 +14,42 @@ export default {
           white: '#FFFFFF',
           black: '#000000',
 
-          primary: '#5F56F1'
+          primary: '#5F56F1',
+          primaryLight: '',
+          primaryDark: '',
+
+          secondary: '',
+          secondaryLight: '',
+          secondaryDark: '',
+
+          success: '',
+          successLight: '',
+          sucessDark: '',
+          warning: '',
+          warningLight: '',
+          warningDark: '',
+          danger: '',
+          dangerLight: '',
+          dangerDark: '',
+          info: '',
+          infoLight: '',
+          infoDark: '',
+
+          gray: {
+            50: '#f8f8f8',
+            100: '#f4f4f4',
+            200: '#efefef',
+            300: '#e8e8e8',
+            400: '#dddddd',
+            500: '#cdcdcd',
+            600: '#b6b6b6',
+            700: '#9b9b9b',
+            800: '#818181',
+            900: '#686868',
+            1000: '#4f4f4f',
+            1100: '#343434',
+            1200: '#090909'
+          }
         }
       },
       fontFamily: {

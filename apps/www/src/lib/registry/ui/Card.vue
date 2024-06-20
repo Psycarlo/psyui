@@ -1,0 +1,18 @@
+<template>
+  <div :class="cardClass">
+    <slot />
+  </div>
+</template>
+
+<script setup lang="ts">
+  import { tv } from 'tailwind-variants'
+  import { type HTMLAttributes, computed } from 'vue'
+
+  const props = defineProps<{ class?: HTMLAttributes['class'] }>()
+
+  const cardClass = computed(() =>
+    tv({
+      base: 'rounded-md border-2 p-4 shadow-sm'
+    })({ class: props.class })
+  )
+</script>

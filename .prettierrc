@@ -5,5 +5,6 @@
   "printWidth": 80,
   "endOfLine": "auto",
   "vueIndentScriptAndStyle": true,
-  "plugins": ["prettier-plugin-pkg", "prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-pkg", "prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["tv"]
 }

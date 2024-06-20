@@ -28,6 +28,7 @@ export default defineConfig({
   lastUpdated: true,
   srcDir: path.resolve(__dirname, '../src'),
   rewrites: { 'content/(.*)': '(.*)' },
+  cleanUrls: true,
   vite: {
     css: {
       postcss: {
