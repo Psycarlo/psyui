@@ -9,7 +9,9 @@
         <div class="flex items-center gap-6">
           <ul class="flex items-center gap-4">
             <li>
-              <a href="/docs" class="font-medium">Docs</a>
+              <a href="/docs/getting-started/introduction" class="font-medium">
+                Docs
+              </a>
             </li>
             <li>
               <a href="/components" class="font-medium">Components </a>
@@ -38,10 +40,17 @@
         </div>
       </nav>
     </header>
-    <Content />
-    <footer class="mt-20 border-t border-gray-200">
+    <div>
+      <component :is="'docs'" v-if="$route.path.includes('docs')">
+        <Content :key="$route.path" />
+      </component>
+      <div v-else>
+        <Content :key="$route.path" />
+      </div>
+    </div>
+    <footer class="mt-20 border-t border-gray-200 py-10">
       <nav class="mx-auto flex max-w-screen-xl flex-col px-4">
-        <div class="mt-12 flex flex-col gap-2">
+        <div class="flex flex-col gap-2">
           <h3 class="font-medium">Inspiration</h3>
           <a href="https://www.shadcn-vue.com/" target="_blank" class="text-sm">
             shadcn-vue
@@ -51,6 +60,9 @@
           </a>
           <a href="https://www.tremor.so/" target="_blank" class="text-sm">
             tremor
+          </a>
+          <a href="https://nextui.org/" target="_blank" class="text-sm">
+            next ui
           </a>
           <a href="https://ui.aceternity.com/" target="_blank" class="text-sm">
             aceternity ui
@@ -86,10 +98,13 @@
 
 <script setup lang="ts">
   import { siteConfig } from '../config/site'
-  import { Content } from 'vitepress'
+  import { Content, useRoute, useData } from 'vitepress'
   import Announcement from '../components/Announcement.vue'
   import Logo from '../components/Logo.vue'
   import { ref, onMounted } from 'vue'
+
+  const $route = useRoute()
+  const { frontmatter } = useData()
 
   const repoStars = ref(0)
   const loading = ref(false)

@@ -10,11 +10,13 @@
   </main>
   <section class="mx-auto flex max-w-screen-xl px-4 pt-16">
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold">UI</h2>
+      <h2 class="text-2xl font-bold">Common</h2>
       <hr />
-      <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <li>
-          <ComponentCard />
+          <ComponentCard title="Card" href="/docs/common/card">
+            hey
+          </ComponentCard>
         </li>
       </ul>
     </div>

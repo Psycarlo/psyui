@@ -40,33 +40,6 @@
             Tailwind CSS
           </p>
         </div>
-        <div class="flex items-center gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20.013 20.013"
-            class="h-5 w-5 stroke-slate-400"
-          >
-            <g transform="translate(-1.993 -1.993)">
-              <path
-                d="M6.744,4.325l7.82-1.267a4.456,4.456,0,0,1,5.111,3.686l1.267,7.82a4.456,4.456,0,0,1-3.686,5.111l-7.82,1.267a4.456,4.456,0,0,1-5.111-3.686L3.058,9.436A4.456,4.456,0,0,1,6.744,4.325"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-              <path
-                d="M7.252,7.7l7.9-1.28a1,1,0,0,1,1.147.828l.36,2.223-9.562,3.51-.67-4.134A1,1,0,0,1,7.252,7.7"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </g>
-          </svg>
-          <p class="text-xs font-medium uppercase text-slate-600">
-            Headless UI
-          </p>
-        </div>
       </div>
       <h1 class="text-balance text-center text-7xl font-semibold">
         Make your vue websites look 10x better
