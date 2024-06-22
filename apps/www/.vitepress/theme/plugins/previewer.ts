@@ -12,9 +12,9 @@ export default function (md: MarkdownRenderer) {
 
       const props = parseProps(content)
       const { attrs } = props
-      const demoScripts =
+      const componentString =
         `<ComponentPreview ${attrs ?? ''} v-bind='${JSON.stringify(props)}'></ComponentPreview>`.trim()
-      return demoScripts
+      return componentString
     }
   }
   addRenderRule('html_block')
