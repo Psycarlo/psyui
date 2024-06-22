@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 import tailwind from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import { siteConfig } from './theme/config/site'
+import ComponentPreviewPlugin from './theme/plugins/previewer'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,6 +28,11 @@ export default defineConfig({
   },
   lastUpdated: true,
   srcDir: path.resolve(__dirname, '../src'),
+  markdown: {
+    config(md) {
+      md.use(ComponentPreviewPlugin)
+    }
+  },
   rewrites: { 'content/(.*)': '(.*)' },
   cleanUrls: true,
   vite: {

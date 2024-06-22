@@ -12,7 +12,10 @@
         </div>
       </div>
     </aside>
-    <main class="px-8">
+    <main class="mt-8 px-8">
+      <p class="text-brand-primary font-medium capitalize">
+        {{ componentType }}
+      </p>
       <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
       <p class="text-brand-gray-1100 text-lg">{{ frontmatter.description }}</p>
       <div class="vp-doc">
@@ -26,6 +29,8 @@
   import { useData, useRoute } from 'vitepress'
   import { docsConfig } from '../config/docs'
 
-  const $route = useRoute()
+  const route = useRoute()
   const { frontmatter } = useData()
+
+  const componentType = route.path.split('/').at(-2)
 </script>
