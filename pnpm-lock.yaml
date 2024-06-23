@@ -44,6 +44,12 @@ importers:
       '@unovis/vue':
         specifier: ^1.4.1
         version: 1.4.1(@unovis/ts@1.4.1)(vue@3.4.29(typescript@5.4.5))
+      '@vueuse/core':
+        specifier: ^10.11.0
+        version: 10.11.0(vue@3.4.29(typescript@5.4.5))
+      magic-string:
+        specifier: ^0.30.10
+        version: 0.30.10
       radix-vue:
         specifier: ^1.8.4
         version: 1.8.4(vue@3.4.29(typescript@5.4.5))

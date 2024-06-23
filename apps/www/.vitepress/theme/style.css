@@ -12,3 +12,15 @@
     src: url('/fonts/Inter/InterVF.ttf') format('truetype');
   }
 }
+
+div[class^='language-'] {
+  @apply max-h-[650px] overflow-x-auto rounded-lg !bg-slate-900;
+}
+
+pre {
+  @apply py-4;
+}
+
+pre code .line {
+  @apply inline-block min-h-4 w-full !py-0.5 px-4 leading-[--vp-code-line-height];
+}
