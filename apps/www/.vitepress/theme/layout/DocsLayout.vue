@@ -1,6 +1,8 @@
 <template>
   <div class="mx-auto flex max-w-screen-xl px-4">
-    <aside class="mt-6 hidden w-64 flex-col gap-4 lg:flex">
+    <aside
+      class="mt-6 hidden w-60 flex-col gap-4 border-r border-slate-200 lg:flex"
+    >
       <div v-for="docsGroup in docsConfig.sidebarNav" :key="docsGroup.title">
         <h3 class="text-sm font-bold">
           {{ docsGroup.title }}
@@ -17,17 +19,24 @@
             <a
               v-if="doc.href"
               :href="doc.href"
+              class="inline-flex items-center gap-3"
               :class="{
                 'text-brand-primary': route.path === `${doc.href}`
               }"
             >
               {{ doc.title }}
+              <div
+                v-if="doc.label"
+                class="bg-brand-primaryLight/30 text-brand-primary rounded-md px-1.5 py-0.5 text-xs"
+              >
+                {{ doc.label }}
+              </div>
             </a>
           </li>
         </ul>
       </div>
     </aside>
-    <main class="mt-8 flex-1 px-8 lg:ml-12">
+    <main class="mt-8 max-w-3xl flex-1 px-8 lg:ml-12">
       <p class="text-brand-primary font-medium capitalize">
         {{ componentType }}
       </p>

@@ -22,5 +22,5 @@ pre {
 }
 
 pre code .line {
-  @apply inline-block min-h-4 w-full !py-0.5 px-4 leading-[--vp-code-line-height];
+  @apply inline-block min-h-4 w-full !py-0.5 px-4 text-sm leading-[--vp-code-line-height];
 }

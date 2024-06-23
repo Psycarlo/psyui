@@ -25,7 +25,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: 'Common',
-      items: [{ title: 'Card', href: '/docs/common/card' }]
+      items: [{ title: 'Card', href: '/docs/common/card', label: 'New' }]
     }
   ]
 }

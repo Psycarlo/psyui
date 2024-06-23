@@ -14,5 +14,5 @@ export const announcementConfig = {
   icon: '✨',
   title: 'Introducing psyui beta',
   description: 'Copy paste vue components',
-  link: '/'
+  link: '/components'
 }
