@@ -5,11 +5,26 @@
         <h3 class="text-sm font-bold">
           {{ docsGroup.title }}
         </h3>
-        <div v-for="doc in docsGroup.items" :key="doc.title" class="ml-2">
-          <a v-if="doc.href" :href="doc.href" class="text-sm">
-            {{ doc.title }}
-          </a>
-        </div>
+        <ul v-for="doc in docsGroup.items" :key="doc.title" class="ml-2 mt-2">
+          <li
+            class="border-l-2 py-1 pl-4 text-sm"
+            :class="[
+              route.path === `${doc.href}`
+                ? 'border-brand-primary'
+                : 'border-slate-200'
+            ]"
+          >
+            <a
+              v-if="doc.href"
+              :href="doc.href"
+              :class="{
+                'text-brand-primary': route.path === `${doc.href}`
+              }"
+            >
+              {{ doc.title }}
+            </a>
+          </li>
+        </ul>
       </div>
     </aside>
     <main class="mt-8 flex-1 px-8 lg:ml-12">
