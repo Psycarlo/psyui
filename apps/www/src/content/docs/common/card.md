@@ -3,6 +3,6 @@ title: Card
 description: A rectangle to contain your content.
 ---
 
-# Yau
+<ComponentPreview name="CardDemo" />
 
-<ComponentPreview />
+## Instalation
