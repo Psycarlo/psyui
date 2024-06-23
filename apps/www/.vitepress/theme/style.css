@@ -24,3 +24,15 @@ pre {
 pre code .line {
   @apply inline-block min-h-4 w-full !py-0.5 px-4 text-sm leading-[--vp-code-line-height];
 }
+
+@layer utilities {
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute inline-flex h-8 w-8 items-center justify-center rounded-md border border-slate-200 bg-slate-50 text-center -indent-px font-mono text-sm font-medium;
+    @apply -ml-[50px] -mt-1;
+    content: counter(step);
+  }
+}

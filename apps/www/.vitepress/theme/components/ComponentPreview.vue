@@ -1,10 +1,16 @@
 <template>
-  <div class="not-docs">
-    <TabGroup>
-      <TabList
-        class="flex w-fit gap-2 rounded-md bg-slate-100 p-[3px]"
-        as="div"
-      >
+  <div class="not-docs flex flex-col gap-6">
+    <ul class="border-b border-slate-200 px-1 py-2">
+      <li>
+        <ExternalLink
+          :href="`https://github.com/Psycarlo/psyui/blob/main/apps/www/src/lib/registry/ui/${props.name}.vue`"
+        >
+          Github
+        </ExternalLink>
+      </li>
+    </ul>
+    <TabGroup as="div" class="flex flex-col gap-2">
+      <TabList class="flex w-fit gap-2 rounded-md bg-slate-100 p-1" as="div">
         <Tab as="template" v-slot="{ selected }">
           <button
             class="flex items-center gap-1 rounded-md p-2 focus:outline-none"
@@ -36,7 +42,7 @@
         </Tab>
         <Tab as="template" v-slot="{ selected }">
           <button
-            class="focus:ring-brand-primary flex items-center gap-1 rounded-md p-2 focus:outline-none"
+            class="focus:ring-brand-primary flex items-center gap-1 rounded-md px-2 py-1 focus:outline-none"
             :class="{ 'bg-brand-white': selected }"
           >
             <svg
@@ -60,19 +66,13 @@
         </Tab>
       </TabList>
       <TabPanels>
-        <TabPanel>
+        <TabPanel
+          class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200 p-10"
+        >
           <ComponentLoader :name="`${props.name}Demo`" />
         </TabPanel>
-        <TabPanel class="vp-doc">
-          <div v-if="codeHtml" class="language-vue">
-            <button
-              title="Copy Code"
-              class="copy"
-              :class="{ copied }"
-              @click="copy(transformedRawString)"
-            />
-            <div v-html="codeHtml" />
-          </div>
+        <TabPanel class="vp-doc -mt-4">
+          <ComponentCode :name="`${props.name}Demo`" />
         </TabPanel>
       </TabPanels>
     </TabGroup>
@@ -80,46 +80,15 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, ref, computed } from 'vue'
   // TODO: Replace with psyui Tabs component
-  import { useClipboard } from '@vueuse/core'
   import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
   import ComponentLoader from './ComponentLoader.vue'
-  import { cssVariables } from '../config/shiki'
-  import { codeToHtml } from 'shiki'
-  import MagicString from 'magic-string'
+  import ExternalLink from './ExternalLink.vue'
+  import ComponentCode from './ComponentCode.vue'
 
   type ComponentPreviewProps = {
     name: string
   }
 
   const props = defineProps<ComponentPreviewProps>()
-
-  const { copy, copied } = useClipboard()
-
-  const rawString = ref('')
-  const codeHtml = ref('')
-  const transformedRawString = computed(() =>
-    transformImportPath(rawString.value)
-  )
-
-  function transformImportPath(code: string) {
-    const s = new MagicString(code)
-    s.replaceAll(`../ui/`, '@/components/')
-    return s.toString()
-  }
-
-  onMounted(async () => {
-    try {
-      rawString.value = await import(
-        `../../../src/lib/registry/examples/${props.name}Demo.vue?raw`
-      ).then((res) => res.default.trim())
-      codeHtml.value = await codeToHtml(transformedRawString.value, {
-        lang: 'vue',
-        theme: cssVariables
-      })
-    } catch (_) {
-      // TODO: handle
-    }
-  })
 </script>

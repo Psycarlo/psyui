@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto flex max-w-screen-xl px-4">
+  <div class="mx-auto flex max-w-screen-xl px-8">
     <aside
       class="mt-6 hidden w-60 flex-col gap-4 border-r border-slate-200 lg:flex"
     >
@@ -37,12 +37,16 @@
       </div>
     </aside>
     <main class="mt-8 max-w-3xl flex-1 px-8 lg:ml-12">
-      <p class="text-brand-primary font-medium capitalize">
-        {{ componentType }}
-      </p>
-      <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
-      <p class="text-brand-gray-1100 text-lg">{{ frontmatter.description }}</p>
-      <div class="vp-doc">
+      <div class="flex flex-col gap-3">
+        <p class="text-brand-primary font-medium capitalize">
+          {{ componentType }}
+        </p>
+        <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
+        <p class="text-brand-gray-900 text-lg">
+          {{ frontmatter.description }}
+        </p>
+      </div>
+      <div class="vp-doc mt-6">
         <slot />
       </div>
     </main>
