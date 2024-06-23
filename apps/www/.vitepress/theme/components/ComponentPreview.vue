@@ -61,18 +61,48 @@
       </TabList>
       <TabPanels>
         <TabPanel>
-          <ComponentLoader :name="name" />
+          <ComponentLoader :name="`${props.name}Demo`" />
         </TabPanel>
-        <TabPanel>22</TabPanel>
+        <TabPanel class="vp-doc rounded-md bg-slate-950">
+          <div v-if="codeHtml" class="language-vue p-4">
+            <button title="Copy Code" class="copy" />
+            <div v-html="codeHtml" />
+          </div>
+        </TabPanel>
       </TabPanels>
     </TabGroup>
   </div>
 </template>
 
 <script setup lang="ts">
+  import { onMounted, ref } from 'vue'
   // TODO: Replace with psyui Tabs component
   import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
   import ComponentLoader from './ComponentLoader.vue'
+  import { cssVariables } from '../config/shiki'
+  import { codeToHtml } from 'shiki'
 
-  defineProps<{ name: string }>()
+  type ComponentPreviewProps = {
+    name: string
+  }
+
+  const props = defineProps<ComponentPreviewProps>()
+
+  const rawString = ref('')
+  const codeHtml = ref('')
+
+  onMounted(async () => {
+    try {
+      rawString.value = await import(
+        `../../../src/lib/registry/ui/${props.name}.vue?raw`
+      ).then((res) => res.default.trim())
+      codeHtml.value = await codeToHtml(rawString.value, {
+        lang: 'vue',
+        theme: cssVariables
+      })
+      console.log(codeHtml)
+    } catch (_) {
+      // TODO: handle
+    }
+  })
 </script>

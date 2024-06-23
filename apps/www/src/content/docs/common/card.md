@@ -3,6 +3,6 @@ title: Card
 description: A rectangle to contain your content.
 ---
 
-<ComponentPreview name="CardDemo" />
+<ComponentPreview name="Card" />
 
 ## Instalation
