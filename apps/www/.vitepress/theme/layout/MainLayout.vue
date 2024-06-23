@@ -3,11 +3,11 @@
     <Announcement />
     <header class="border-b border-gray-200">
       <nav
-        class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4"
+        class="mx-auto flex max-w-screen-xl items-center justify-between px-8 py-4"
       >
         <Logo />
         <div class="flex items-center gap-6">
-          <ul class="flex items-center gap-4">
+          <ul class="flex items-center gap-6 text-sm">
             <li>
               <a href="/docs/getting-started/introduction" class="font-medium">
                 Docs

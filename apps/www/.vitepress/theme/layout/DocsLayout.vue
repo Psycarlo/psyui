@@ -1,21 +1,52 @@
 <template>
-  <div class="mx-auto flex max-w-screen-xl px-4">
-    <aside class="hidden md:block">
+  <div class="mx-auto flex max-w-screen-xl px-8">
+    <aside
+      class="mt-6 hidden w-60 flex-col gap-4 border-r border-slate-200 lg:flex"
+    >
       <div v-for="docsGroup in docsConfig.sidebarNav" :key="docsGroup.title">
         <h3 class="text-sm font-bold">
           {{ docsGroup.title }}
         </h3>
-        <div v-for="doc in docsGroup.items" :key="doc.title" class="ml-2">
-          <a v-if="doc.href" :href="doc.href" class="text-sm">
-            {{ doc.title }}
-          </a>
-        </div>
+        <ul v-for="doc in docsGroup.items" :key="doc.title" class="ml-2 mt-2">
+          <li
+            class="border-l-2 py-1 pl-4 text-sm"
+            :class="[
+              route.path === `${doc.href}`
+                ? 'border-brand-primary'
+                : 'border-slate-200'
+            ]"
+          >
+            <a
+              v-if="doc.href"
+              :href="doc.href"
+              class="inline-flex items-center gap-3"
+              :class="{
+                'text-brand-primary': route.path === `${doc.href}`
+              }"
+            >
+              {{ doc.title }}
+              <div
+                v-if="doc.label"
+                class="bg-brand-primaryLight/30 text-brand-primary rounded-md px-1.5 py-0.5 text-xs"
+              >
+                {{ doc.label }}
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </aside>
-    <main class="px-8">
-      <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
-      <p class="text-brand-gray-1100 text-lg">{{ frontmatter.description }}</p>
-      <div class="vp-doc">
+    <main class="mt-8 max-w-3xl flex-1 px-8 lg:ml-12">
+      <div class="flex flex-col gap-3">
+        <p class="text-brand-primary font-medium capitalize">
+          {{ componentType }}
+        </p>
+        <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
+        <p class="text-brand-gray-900 text-lg">
+          {{ frontmatter.description }}
+        </p>
+      </div>
+      <div class="vp-doc mt-6">
         <slot />
       </div>
     </main>
@@ -26,6 +57,8 @@
   import { useData, useRoute } from 'vitepress'
   import { docsConfig } from '../config/docs'
 
-  const $route = useRoute()
+  const route = useRoute()
   const { frontmatter } = useData()
+
+  const componentType = route.path.split('/').at(-2)
 </script>

@@ -15,6 +15,8 @@
     "@headlessui/vue": "^1.7.22",
     "@unovis/ts": "^1.4.1",
     "@unovis/vue": "^1.4.1",
+    "@vueuse/core": "^10.11.0",
+    "magic-string": "^0.30.10",
     "radix-vue": "^1.8.4",
     "tailwind-variants": "^0.2.1",
     "vue": "^3.4.29"
@@ -22,8 +24,11 @@
   "devDependencies": {
     "@types/node": "^20.14.5",
     "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/compiler-core": "^3.4.30",
+    "@vue/compiler-dom": "^3.4.30",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.19",
+    "shiki": "^1.9.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5",
     "vitepress": "^1.2.3",
