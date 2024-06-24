@@ -12,7 +12,7 @@
 
   const cardClass = computed(() =>
     tv({
-      base: 'rounded-md border p-4 shadow-sm'
+      base: 'w-full rounded-md border p-4 shadow-sm'
     })({ class: props.class })
   )
 </script>
