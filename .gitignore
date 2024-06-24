@@ -18,3 +18,6 @@ lerna-debug.log*
 
 # Builds
 dist
+
+# Misc
+.DS_Store

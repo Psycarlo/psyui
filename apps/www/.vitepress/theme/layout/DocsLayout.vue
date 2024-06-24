@@ -39,7 +39,7 @@
     <main class="mt-8 max-w-3xl flex-1 px-8 lg:ml-12">
       <div class="flex flex-col gap-3">
         <p class="text-brand-primary font-medium capitalize">
-          {{ componentType }}
+          {{ subtitle }}
         </p>
         <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
         <p class="text-brand-gray-900 text-lg">
@@ -49,16 +49,27 @@
       <div class="vp-doc mt-6">
         <slot />
       </div>
+      <EditLink />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
+  import { watch, ref } from 'vue'
   import { useData, useRoute } from 'vitepress'
   import { docsConfig } from '../config/docs'
+  import EditLink from '../components/EditLink.vue'
 
   const route = useRoute()
   const { frontmatter } = useData()
 
-  const componentType = route.path.split('/').at(-2)
+  const subtitle = ref(computeSubtitle())
+
+  function computeSubtitle() {
+    return route.path.split('/').at(-2)?.replaceAll('-', ' ') || ''
+  }
+
+  watch(route, (route) => {
+    subtitle.value = route.path.split('/').at(-2)?.replaceAll('-', ' ') || ''
+  })
 </script>

@@ -49,7 +49,7 @@
       </div>
     </div>
     <footer class="mt-20 border-t border-gray-200 py-10">
-      <nav class="mx-auto flex max-w-screen-xl flex-col px-4">
+      <nav class="mx-auto flex max-w-screen-xl flex-col px-8">
         <div class="flex flex-col gap-2">
           <h3 class="font-medium">Inspiration</h3>
           <a href="https://www.shadcn-vue.com/" target="_blank" class="text-sm">

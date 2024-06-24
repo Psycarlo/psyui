@@ -1,12 +1,12 @@
 :root {
-  --shiki-foreground: #ffffff;
+  --shiki-foreground: #ade9f5;
   --shiki-color-background: #ffffff;
   --shiki-token-constant: #ffffff;
   --shiki-token-string: #ffffff;
   --shiki-token-comment: #ffffff;
   --shiki-token-keyword: #ff7b72;
   --shiki-token-parameter: #aa0000;
-  --shiki-token-function: #ffffff;
+  --shiki-token-function: #ffff00;
   --shiki-token-string-expression: #73bfff;
   --shiki-token-punctuation: #ffffff;
   --shiki-token-link: #ee0000;

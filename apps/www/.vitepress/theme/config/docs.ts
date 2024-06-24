@@ -26,6 +26,16 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Common',
       items: [{ title: 'Card', href: '/docs/common/card', label: 'New' }]
+    },
+    {
+      title: 'Visualizations',
+      items: [
+        {
+          title: 'Spark Line Chart',
+          href: '/docs/visualizations/spark-line-chart',
+          label: 'New'
+        }
+      ]
     }
   ]
 }

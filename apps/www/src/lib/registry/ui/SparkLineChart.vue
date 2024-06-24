@@ -14,6 +14,7 @@
   import { computed, type HTMLAttributes } from 'vue'
 
   type DataRecord = { x: number; y: number }
+
   const props = defineProps<{
     data: DataRecord[]
     class?: HTMLAttributes['class']

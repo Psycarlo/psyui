@@ -1,7 +1,7 @@
 <template>
   <a class="group flex flex-col gap-2">
     <Card>
-      <slot />
+      <img :src="props.img" :alt="title" />
     </Card>
     <div class="flex items-center gap-1">
       <p>{{ props.title }}</p>
@@ -16,6 +16,7 @@
 
   type ComponentCardProps = {
     title: string
+    img: string
   }
 
   const props = defineProps<ComponentCardProps>()
