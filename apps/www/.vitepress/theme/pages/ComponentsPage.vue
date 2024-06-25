@@ -42,6 +42,15 @@
     <div class="flex w-full flex-col gap-2">
       <h2 class="text-2xl font-bold">Trending</h2>
       <hr />
+      <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <ComponentCard
+            title="Marquee"
+            href="/docs/trending/marquee"
+            img="/images/components/card.webp"
+          />
+        </li>
+      </ul>
     </div>
   </section>
   <section class="mx-auto flex max-w-screen-xl px-4 pt-20">
