@@ -7,8 +7,10 @@
         <h3 class="text-sm font-bold">
           {{ docsGroup.title }}
         </h3>
-        <ul v-for="doc in docsGroup.items" :key="doc.title" class="ml-2 mt-2">
+        <ul class="ml-2 mt-2">
           <li
+            v-for="doc in docsGroup.items"
+            :key="doc.title"
             class="border-l-2 py-1 pl-4 text-sm"
             :class="[
               route.path === `${doc.href}`
