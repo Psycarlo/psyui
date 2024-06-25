@@ -50,6 +50,16 @@ export const docsConfig: DocsConfig = {
           label: 'New'
         }
       ]
+    },
+    {
+      title: 'Others',
+      items: [
+        {
+          title: 'Animated Chevron',
+          href: '/docs/others/animated-chevron',
+          label: 'New'
+        }
+      ]
     }
   ]
 }
