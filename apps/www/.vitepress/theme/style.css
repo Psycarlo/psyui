@@ -13,6 +13,10 @@
   }
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 div[class^='language-'] {
   @apply max-h-[650px] overflow-x-auto rounded-lg !bg-slate-900;
 }

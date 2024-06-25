@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-  import ChevronRight from '@/lib/registry/ui/animated-icons/ChevronRight.vue'
+  import ChevronRight from '@/lib/registry/ui/AnimatedChevron.vue'
   import Card from '@/lib/registry/ui/Card.vue'
 
   type ComponentCardProps = {

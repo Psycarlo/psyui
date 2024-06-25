@@ -1,5 +1,5 @@
 <template>
-  <a href="/">
+  <a href="/" class="flex items-center gap-3">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="81"
@@ -30,5 +30,10 @@
         </g>
       </g>
     </svg>
+    <span
+      class="bg-brand-primaryLight/30 text-brand-primary rounded-md px-2 py-0.5 text-xs font-medium"
+    >
+      Beta
+    </span>
   </a>
 </template>

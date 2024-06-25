@@ -7,8 +7,10 @@
         <h3 class="text-sm font-bold">
           {{ docsGroup.title }}
         </h3>
-        <ul v-for="doc in docsGroup.items" :key="doc.title" class="ml-2 mt-2">
+        <ul class="ml-2 mt-2">
           <li
+            v-for="doc in docsGroup.items"
+            :key="doc.title"
             class="border-l-2 py-1 pl-4 text-sm"
             :class="[
               route.path === `${doc.href}`
@@ -36,13 +38,13 @@
         </ul>
       </div>
     </aside>
-    <main class="mt-8 max-w-3xl flex-1 px-8 lg:ml-12">
+    <main class="mt-8 max-w-4xl flex-1 px-8 lg:ml-12">
       <div class="flex flex-col gap-3">
         <p class="text-brand-primary font-medium capitalize">
           {{ subtitle }}
         </p>
         <h1 class="text-3xl font-bold">{{ frontmatter.title }}</h1>
-        <p class="text-brand-gray-900 text-lg">
+        <p class="text-brand-gray-1000 text-lg">
           {{ frontmatter.description }}
         </p>
       </div>

@@ -20,7 +20,11 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Getting Started',
       items: [
-        { title: 'Introduction', href: '/docs/getting-started/introduction' }
+        { title: 'Introduction', href: '/docs/getting-started/introduction' },
+        { title: 'Installation', href: '/docs/getting-started/installation' },
+        { title: 'Changelog', href: '/docs/getting-started/changelog' },
+        { title: 'About', href: '/docs/getting-started/about' },
+        { title: 'Contribution', href: '/docs/getting-started/contribution' }
       ]
     },
     {
@@ -33,6 +37,26 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Spark Line Chart',
           href: '/docs/visualizations/spark-line-chart',
+          label: 'New'
+        }
+      ]
+    },
+    {
+      title: 'Trending',
+      items: [
+        {
+          title: 'Marquee',
+          href: '/docs/trending/marquee',
+          label: 'New'
+        }
+      ]
+    },
+    {
+      title: 'Others',
+      items: [
+        {
+          title: 'Animated Chevron',
+          href: '/docs/others/animated-chevron',
           label: 'New'
         }
       ]

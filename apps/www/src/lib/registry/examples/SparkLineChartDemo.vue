@@ -1,5 +1,5 @@
 <template>
-  <Card class="flex items-center gap-4">
+  <Card class="mx-auto flex max-w-md items-center justify-center gap-4">
     <p class="text-brand-black font-medium">BTC</p>
     <p class="text-brand-gray-700">Bitcoin</p>
     <SparkLineChart

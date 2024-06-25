@@ -67,7 +67,7 @@
       </TabList>
       <TabPanels>
         <TabPanel
-          class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200 p-10"
+          class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200"
         >
           <ComponentLoader :name="`${props.name}Demo`" />
         </TabPanel>
