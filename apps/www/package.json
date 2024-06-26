@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.22",
+    "@heroicons/vue": "^2.1.4",
     "@unovis/ts": "^1.4.1",
     "@unovis/vue": "^1.4.1",
     "@vueuse/core": "^10.11.0",

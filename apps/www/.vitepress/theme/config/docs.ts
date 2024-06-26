@@ -29,7 +29,11 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: 'Common',
-      items: [{ title: 'Card', href: '/docs/common/card', label: 'New' }]
+      items: [
+        { title: 'Accordion', href: '/docs/common/accordion', label: 'New' },
+        { title: 'Badge', href: '/docs/common/badge', label: 'New' },
+        { title: 'Card', href: '/docs/common/card', label: 'New' }
+      ]
     },
     {
       title: 'Visualizations',

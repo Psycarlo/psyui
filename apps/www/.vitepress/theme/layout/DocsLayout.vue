@@ -11,7 +11,7 @@
           <li
             v-for="doc in docsGroup.items"
             :key="doc.title"
-            class="border-l-2 py-1 pl-4 text-sm"
+            class="border-l-2 py-1.5 pl-4 text-sm"
             :class="[
               route.path === `${doc.href}`
                 ? 'border-brand-primary'

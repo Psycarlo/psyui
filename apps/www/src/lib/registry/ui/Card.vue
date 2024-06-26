@@ -8,7 +8,11 @@
   import { tv } from 'tailwind-variants'
   import { type HTMLAttributes, computed } from 'vue'
 
-  const props = defineProps<{ class?: HTMLAttributes['class'] }>()
+  type CardProps = {
+    class?: HTMLAttributes['class']
+  }
+
+  const props = defineProps<CardProps>()
 
   const cardClass = computed(() =>
     tv({

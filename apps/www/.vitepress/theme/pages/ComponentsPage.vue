@@ -15,6 +15,20 @@
       <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <li>
           <ComponentCard
+            title="Accordion"
+            href="/docs/common/accordion"
+            img="/images/components/card.webp"
+          />
+        </li>
+        <li>
+          <ComponentCard
+            title="Badge"
+            href="/docs/common/badge"
+            img="/images/components/card.webp"
+          />
+        </li>
+        <li>
+          <ComponentCard
             title="Card"
             href="/docs/common/card"
             img="/images/components/card.webp"
