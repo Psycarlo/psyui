@@ -29,7 +29,7 @@
               {{ doc.title }}
               <div
                 v-if="doc.label"
-                class="bg-brand-primaryLight/30 text-brand-primary rounded-md px-1.5 py-0.5 text-xs"
+                class="bg-brand-primaryLight/10 text-brand-primary rounded-md px-1.5 py-0.5 text-xs"
               >
                 {{ doc.label }}
               </div>

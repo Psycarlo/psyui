@@ -31,7 +31,7 @@
       </g>
     </svg>
     <span
-      class="bg-brand-primaryLight/30 text-brand-primary rounded-md px-2 py-0.5 text-xs font-medium"
+      class="bg-brand-primaryLight/20 text-brand-primary rounded-md px-2 py-0.5 text-xs font-medium shadow-sm"
     >
       Beta
     </span>

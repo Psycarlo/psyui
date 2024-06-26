@@ -9,13 +9,13 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#5F56F1',
+          DEFAULT: '#04AA6D',
 
           white: '#FFFFFF',
           black: '#000000',
 
-          primary: '#5F56F1',
-          primaryLight: '#BFBBF9',
+          primary: '#04AA6D',
+          primaryLight: '#07C680',
           primaryDark: '',
 
           secondary: '',

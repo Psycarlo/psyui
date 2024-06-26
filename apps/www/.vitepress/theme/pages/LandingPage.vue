@@ -3,37 +3,38 @@
     <div
       class="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6"
     >
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-3">
         <p class="text-xs font-medium uppercase text-slate-600">Built with</p>
         <div class="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 18.813 16.327"
-            class="h-5 w-5"
+            viewBox="0 0 32 32"
+            class="h-6 w-6"
           >
-            <g transform="translate(-2 -3.9)" opacity="0.2">
-              <path
-                d="M17.386,3.9l-5.98,10.414L5.427,3.9H2l9.406,16.327L20.813,3.9Z"
-                transform="translate(0 0)"
-              />
-              <path
-                d="M13.408,7.663,11.258,3.9H8.1l5.308,9.138L18.716,3.9H15.625Z"
-                transform="translate(-2.002)"
-              />
-            </g>
+            <path
+              fill="#41b883"
+              d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z"
+            />
+            <path
+              fill="#41b883"
+              d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z"
+            />
+            <path
+              fill="#35495e"
+              d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"
+            />
           </svg>
           <p class="text-xs font-medium uppercase text-slate-600">Vue</p>
         </div>
         <div class="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 27.211 16.327"
-            class="h-6 w-6"
+            viewBox="0 0 32 32"
+            class="h-7 w-7"
           >
             <path
-              d="M15.606,6c-3.633,0-5.891,1.81-6.8,5.442,1.361-1.81,2.952-2.49,4.762-2.041a5.8,5.8,0,0,1,2.6,1.837,7.777,7.777,0,0,0,6.245,2.925c3.633,0,5.891-1.81,6.8-5.442-1.361,1.81-2.952,2.49-4.762,2.041a5.877,5.877,0,0,1-2.6-1.837A7.777,7.777,0,0,0,15.606,6M8.8,14.163c-3.633,0-5.891,1.81-6.8,5.442,1.361-1.81,2.952-2.49,4.762-2.041a5.877,5.877,0,0,1,2.6,1.837,7.777,7.777,0,0,0,6.245,2.925c3.633,0,5.891-1.81,6.8-5.442-1.361,1.81-2.952,2.49-4.762,2.041a5.877,5.877,0,0,1-2.6-1.837A7.777,7.777,0,0,0,8.8,14.163"
-              transform="translate(-2 -6)"
-              opacity="0.2"
+              fill="#44a8b3"
+              d="M9 13.7q1.4-5.6 7-5.6c5.6 0 6.3 4.2 9.1 4.9q2.8.7 4.9-2.1q-1.4 5.6-7 5.6c-5.6 0-6.3-4.2-9.1-4.9q-2.8-.7-4.9 2.1m-7 8.4q1.4-5.6 7-5.6c5.6 0 6.3 4.2 9.1 4.9q2.8.7 4.9-2.1q-1.4 5.6-7 5.6c-5.6 0-6.3-4.2-9.1-4.9q-2.8-.7-4.9 2.1"
             />
           </svg>
           <p class="text-xs font-medium uppercase text-slate-600">

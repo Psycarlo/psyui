@@ -4,6 +4,7 @@
       :data="data"
       :x="(d: DataRecord) => d.x"
       :y="(d: DataRecord) => d.y"
+      color="#04AA6D"
     />
   </VisXYContainer>
 </template>
