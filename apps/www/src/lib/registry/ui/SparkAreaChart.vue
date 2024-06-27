@@ -1,3 +1,42 @@
-<template></template>
+<template>
+  <VisXYContainer :class="containerClass" :svgDefs="svgDefs">
+    <VisLine
+      :data="data"
+      :x="(d: DataRecord) => d.x"
+      :y="(d: DataRecord) => d.y"
+      color="#04AA6D"
+    />
+    <VisArea
+      :data="data"
+      :x="(d: DataRecord) => d.x"
+      :y="(d: DataRecord) => d.y"
+      color="url(#gradient)"
+    />
+  </VisXYContainer>
+</template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { tv } from 'tailwind-variants'
+  import { VisXYContainer, VisArea, VisLine } from '@unovis/vue'
+  import { computed, type HTMLAttributes } from 'vue'
+
+  type DataRecord = { x: number; y: number }
+
+  const props = defineProps<{
+    data: DataRecord[]
+    class?: HTMLAttributes['class']
+  }>()
+
+  const containerClass = computed(() =>
+    tv({
+      base: 'h-[40px] !w-[144px]'
+    })(props)
+  )
+
+  const svgDefs = `
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#04AA6D" stop-opacity="35%" />
+      <stop offset="100%" stop-color="#04AA6D" stop-opacity="0%" />
+    </linearGradient>
+  `
+</script>

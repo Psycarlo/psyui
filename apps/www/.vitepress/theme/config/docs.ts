@@ -41,6 +41,11 @@ export const docsConfig: DocsConfig = {
       title: 'Visualizations',
       items: [
         {
+          title: 'Spark Area Chart',
+          href: '/docs/visualizations/spark-area-chart',
+          label: 'New'
+        },
+        {
           title: 'Spark Line Chart',
           href: '/docs/visualizations/spark-line-chart',
           label: 'New'

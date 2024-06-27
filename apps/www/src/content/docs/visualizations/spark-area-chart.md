@@ -1,9 +1,9 @@
 ---
-title: Spark Line Chart
+title: Spark Area Chart
 description: Visualize data in a small format.
 ---
 
-<ComponentPreview name="SparkLineChart" />
+<ComponentPreview name="SparkAreaChart" />
 
 ## Installation
 
@@ -19,6 +19,6 @@ npm install tailwind-variants @unovis/vue @unovis/ts
 
 Copy and paste the code into your project's component directory.
 
-<ComponentCode name="SparkLineChart" type="ui" />
+<ComponentCode name="SparkAreaChart" type="ui" />
 
 </Steps>
