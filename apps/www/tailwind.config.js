@@ -16,11 +16,11 @@ export default {
 
           primary: '#04AA6D',
           primaryLight: '#07C680',
-          primaryDark: '',
+          primaryDark: '#038857',
 
-          secondary: '',
-          secondaryLight: '',
-          secondaryDark: '',
+          secondary: '#0441AA',
+          secondaryLight: '#065AEC',
+          secondaryDark: '#033488',
 
           success: '',
           successLight: '',
@@ -28,9 +28,9 @@ export default {
           warning: '',
           warningLight: '',
           warningDark: '',
-          danger: '',
-          dangerLight: '',
-          dangerDark: '',
+          danger: '#EF4444',
+          dangerLight: '#F87171',
+          dangerDark: '#DC2626',
           info: '',
           infoLight: '',
           infoDark: '',

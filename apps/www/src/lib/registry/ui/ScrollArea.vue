@@ -29,6 +29,6 @@
   })
 
   const rootClass = computed(() =>
-    tv({ base: 'relative overflow-hidden' })({ class: props.class })
+    tv({ base: 'relative overflow-hidden' })(props)
   )
 </script>

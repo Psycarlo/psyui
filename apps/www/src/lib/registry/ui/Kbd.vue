@@ -28,6 +28,6 @@
           md: ''
         }
       }
-    })({ size: props.size })
+    })(props)
   )
 </script>

@@ -26,8 +26,6 @@
   const calloutClass = computed(() =>
     tv({
       base: 'flex flex-col gap-2 overflow-hidden rounded-md border-l-4 bg-opacity-10 p-4 text-sm'
-    })({
-      class: props.class
-    })
+    })(props)
   )
 </script>

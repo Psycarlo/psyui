@@ -34,6 +34,6 @@
   const marqueeClass = computed(() =>
     tv({
       base: 'group flex overflow-hidden p-2 [--duration:20s] [--gap:1rem] [gap:var(--gap)]'
-    })({ class: props.class })
+    })(props)
   )
 </script>

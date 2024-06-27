@@ -24,6 +24,6 @@
   const containerClass = computed(() =>
     tv({
       base: 'h-[40px] !w-[144px]'
-    })({ class: props.class })
+    })(props)
   )
 </script>
