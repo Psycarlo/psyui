@@ -22,7 +22,6 @@
   type ProgressBarProps = {
     value?: number
     max?: number
-    label?: string
     class?: HTMLAttributes['class']
   }
 
@@ -38,6 +37,8 @@
   )
 
   const progressClass = computed(() =>
-    tv({ base: 'h-full w-full flex-1 transition-all' })({ class: props.class })
+    tv({
+      base: 'h-full w-full flex-1 transition-all duration-500 ease-in-out'
+    })(props)
   )
 </script>
