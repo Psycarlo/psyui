@@ -21,4 +21,12 @@ Copy and paste the code into your project's component directory.
 
 <ComponentCode name="ProgressBar" type="ui" />
 
+### Pass background color
+
+Use background color to style the bar color.
+
+```vue
+<ProgressBar :value="progress" class="bg-brand-primary" />
+```
+
 </Steps>

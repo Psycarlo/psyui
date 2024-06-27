@@ -21,4 +21,12 @@ Copy and paste the code into your project's component directory.
 
 <ComponentCode name="ProgressCircle" type="ui" />
 
+### Pass stroke color
+
+Use stroke to style the circle color.
+
+```vue
+<ProgressCircle :value="progress" class="stroke-brand-primary" />
+```
+
 </Steps>
