@@ -1,6 +1,6 @@
 <template>
   <Card class="mx-auto flex max-w-sm items-center gap-4">
-    <ProgressCircle :value="progress">
+    <ProgressCircle :value="progress" class="stroke-brand-primary">
       <p class="text-sm font-medium">{{ `${progress}%` }}</p>
     </ProgressCircle>
     <div class="flex flex-col gap-1">

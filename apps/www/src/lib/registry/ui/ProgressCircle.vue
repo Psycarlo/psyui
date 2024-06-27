@@ -19,7 +19,7 @@
         fill="transparent"
         stroke=""
         stroke-linecap="round"
-        class="stroke-brand-primary/20"
+        :class="circleClass"
       />
       <circle
         v-if="safeValue >= 0"
@@ -32,7 +32,7 @@
         fill="transparent"
         stroke=""
         stroke-linecap="round"
-        class="stroke-brand-primary transform-gpu transition-all duration-500 ease-in-out"
+        :class="progressClass"
       />
     </svg>
     <div class="absolute inset-0 flex items-center justify-center">
@@ -63,6 +63,14 @@
   const progressCircleClass = computed(() =>
     tv({
       base: 'relative'
+    })(props)
+  )
+
+  const circleClass = computed(() => tv({ base: 'opacity-20' })(props))
+
+  const progressClass = computed(() =>
+    tv({
+      base: 'transform-gpu transition-all duration-500 ease-in-out'
     })(props)
   )
 
