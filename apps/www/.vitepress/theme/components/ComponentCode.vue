@@ -1,5 +1,8 @@
 <template>
-  <div v-if="codeHtml" class="language-vue">
+  <div v-if="loading" class="flex w-full justify-center py-8">
+    <Spinner />
+  </div>
+  <div v-if="!loading && codeHtml" class="language-vue">
     <button
       title="Copy Code"
       class="copy"
@@ -16,6 +19,7 @@
   import { cssVariables } from '../config/shiki'
   import { codeToHtml } from 'shiki'
   import MagicString from 'magic-string'
+  import Spinner from './Spinner.vue'
 
   type ComponentCodeProps = {
     name: string
@@ -33,6 +37,7 @@
   const transformedRawString = computed(() =>
     transformImportPath(rawString.value)
   )
+  const loading = ref(false)
 
   function transformImportPath(code: string) {
     const s = new MagicString(code)
@@ -41,6 +46,7 @@
   }
 
   onMounted(async () => {
+    loading.value = true
     try {
       rawString.value = await import(
         `../../../src/lib/registry/${props.type}/${props.name}.vue?raw`
@@ -51,6 +57,8 @@
       })
     } catch (_) {
       // TODO: handle
+    } finally {
+      loading.value = false
     }
   })
 </script>
