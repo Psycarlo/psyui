@@ -29,6 +29,20 @@
         </li>
         <li>
           <ComponentCard
+            title="Button"
+            href="/docs/common/button"
+            img="/images/components/card.webp"
+          />
+        </li>
+        <li>
+          <ComponentCard
+            title="Callout"
+            href="/docs/common/callout"
+            img="/images/components/card.webp"
+          />
+        </li>
+        <li>
+          <ComponentCard
             title="Card"
             href="/docs/common/card"
             img="/images/components/card.webp"
