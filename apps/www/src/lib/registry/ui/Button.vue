@@ -40,7 +40,7 @@
 
   type ButtonProps = {
     as?: string | Component
-    variant:
+    variant?:
       | 'primary'
       | 'secondary'
       | 'destructive'
