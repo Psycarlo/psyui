@@ -13,39 +13,11 @@
       <h2 class="text-2xl font-bold">Common</h2>
       <hr />
       <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
+        <li v-for="commonComponent in commonComponents">
           <ComponentCard
-            title="Accordion"
-            href="/docs/common/accordion"
-            img="/images/components/card.webp"
-          />
-        </li>
-        <li>
-          <ComponentCard
-            title="Badge"
-            href="/docs/common/badge"
-            img="/images/components/card.webp"
-          />
-        </li>
-        <li>
-          <ComponentCard
-            title="Button"
-            href="/docs/common/button"
-            img="/images/components/card.webp"
-          />
-        </li>
-        <li>
-          <ComponentCard
-            title="Callout"
-            href="/docs/common/callout"
-            img="/images/components/card.webp"
-          />
-        </li>
-        <li>
-          <ComponentCard
-            title="Card"
-            href="/docs/common/card"
-            img="/images/components/card.webp"
+            :title="commonComponent.title"
+            :href="commonComponent.href"
+            :img="commonComponent.img"
           />
         </li>
       </ul>
@@ -56,11 +28,11 @@
       <h2 class="text-2xl font-bold">Visualizations</h2>
       <hr />
       <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
+        <li v-for="visualizationComponent in visualizationComponents">
           <ComponentCard
-            title="Spark Line Chart"
-            href="/docs/visualizations/spark-line-chart"
-            img="/images/components/card.webp"
+            :title="visualizationComponent.title"
+            :href="visualizationComponent.href"
+            :img="visualizationComponent.img"
           />
         </li>
       </ul>
@@ -71,11 +43,11 @@
       <h2 class="text-2xl font-bold">Trending</h2>
       <hr />
       <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
+        <li v-for="trendingComponent in trendingComponents">
           <ComponentCard
-            title="Marquee"
-            href="/docs/trending/marquee"
-            img="/images/components/card.webp"
+            :title="trendingComponent.title"
+            :href="trendingComponent.href"
+            :img="trendingComponent.img"
           />
         </li>
       </ul>
@@ -86,11 +58,11 @@
       <h2 class="text-2xl font-bold">Others</h2>
       <hr />
       <ul class="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
+        <li v-for="otherComponent in otherComponents">
           <ComponentCard
-            title="Animated Chevron Icon"
-            href="/docs/others/animated-chevron"
-            img="/images/components/card.webp"
+            :title="otherComponent.title"
+            :href="otherComponent.href"
+            :img="otherComponent.img"
           />
         </li>
       </ul>
@@ -100,4 +72,77 @@
 
 <script setup lang="ts">
   import ComponentCard from '../components/ComponentCard.vue'
+
+  type ComponentCardProps = {
+    title: string
+    href: string
+    img: string
+  }
+
+  const commonComponents: ComponentCardProps[] = [
+    {
+      title: 'Accordion',
+      href: '/docs/common/accordion',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Badge',
+      href: '/docs/common/badge',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Button',
+      href: '/docs/common/button',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Callout',
+      href: '/docs/common/callout',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Card',
+      href: '/docs/common/card',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Progress Bar',
+      href: '/docs/common/progress-bar',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Progress Circle',
+      href: '/docs/common/progress-circle',
+      img: '/images/components/card.webp'
+    }
+  ]
+
+  const visualizationComponents: ComponentCardProps[] = [
+    {
+      title: 'Spark Area Chart',
+      href: '/docs/visualizations/spark-area-chart',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Spark Line Chart',
+      href: '/docs/visualizations/spark-line-chart',
+      img: '/images/components/card.webp'
+    }
+  ]
+
+  const trendingComponents: ComponentCardProps[] = [
+    {
+      title: 'Marquee',
+      href: '/docs/trending/marquee',
+      img: '/images/components/card.webp'
+    }
+  ]
+
+  const otherComponents: ComponentCardProps[] = [
+    {
+      title: 'Animated Chevron Icon',
+      href: '/docs/others/animated-chevron',
+      img: '/images/components/card.webp'
+    }
+  ]
 </script>
