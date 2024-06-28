@@ -1,5 +1,7 @@
 # psyui
 
+![hero](apps/www/src/public/og.png)
+
 Copy paste beautiful vue components and use them in your websites without having to worry about styling and animations. Free. Open source.
 
 ## Documentation

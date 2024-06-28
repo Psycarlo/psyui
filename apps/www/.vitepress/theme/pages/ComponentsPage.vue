@@ -86,6 +86,11 @@
       img: '/images/components/accordion.webp'
     },
     {
+      title: 'Avatar',
+      href: '/docs/common/avatar',
+      img: '/images/components/avatar.webp'
+    },
+    {
       title: 'Badge',
       href: '/docs/common/badge',
       img: '/images/components/badge.webp'

@@ -99,11 +99,15 @@
                   <CheckCircleIcon class="fill-brand-primary h-5 w-5" />
                   <span class="font-medium">website.com</span>
                 </div>
-                <span class="text-sm text-slate-500">69% uptime</span>
+                <span class="xs:inline hidden text-sm text-slate-500">
+                  69% uptime
+                </span>
               </div>
               <Tracker :data="trackerData" />
             </Card>
-            <div class="flex justify-center gap-4">
+            <div
+              class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+            >
               <Badge
                 variant="filled"
                 class="bg-brand-primaryDark rounded-full font-medium text-white"
@@ -231,7 +235,7 @@
         <div
           class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 p-3"
         >
-          <Square3Stack3DIcon class="fill-brand-primaryDark h-5 w-5" />
+          <Square3Stack3DIcon class="h-5 w-5 fill-red-600" />
         </div>
         <span class="mt-3 text-3xl font-bold">More than 69</span>
         <span class="font-medium">Beautiful components</span>
@@ -256,7 +260,7 @@
         <div
           class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 p-3"
         >
-          <HeartIcon class="h-5 w-5 fill-red-600" />
+          <HeartIcon class="fill-brand-primary h-5 w-5" />
         </div>
         <span class="mt-3 text-3xl font-bold">Vue & Tailwind</span>
         <span class="font-medium">Built with the best technologies</span>

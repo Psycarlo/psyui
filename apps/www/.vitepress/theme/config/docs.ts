@@ -31,6 +31,7 @@ export const docsConfig: DocsConfig = {
       title: 'Common',
       items: [
         { title: 'Accordion', href: '/docs/common/accordion', label: 'New' },
+        { title: 'Avatar', href: '/docs/common/avatar', label: 'New' },
         { title: 'Badge', href: '/docs/common/badge', label: 'New' },
         { title: 'Button', href: '/docs/common/button', label: 'New' },
         { title: 'Callout', href: '/docs/common/callout', label: 'New' },

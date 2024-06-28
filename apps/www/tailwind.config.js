@@ -1,3 +1,4 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
 import colors from 'tailwindcss/colors'
 
 /** @type {import('tailwindcss').Config} */
@@ -8,6 +9,10 @@ export default {
     './.vitepress/**/*.{vue,js,ts,jsx,tsx}'
   ],
   theme: {
+    screens: {
+      xs: '425px',
+      ...defaultTheme.screens
+    },
     extend: {
       colors: {
         brand: {
