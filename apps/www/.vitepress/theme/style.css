@@ -29,6 +29,10 @@ pre code .line {
   @apply inline-block min-h-4 w-full !py-0.5 px-4 text-sm leading-[--vp-code-line-height];
 }
 
+img[src$='#rounded'] {
+  @apply rounded-lg;
+}
+
 @layer utilities {
   .step {
     counter-increment: step;

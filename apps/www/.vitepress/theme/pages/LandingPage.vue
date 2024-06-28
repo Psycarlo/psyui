@@ -50,10 +50,12 @@
             </p>
           </div>
         </div>
-        <h1 class="text-balance text-center text-7xl font-semibold">
+        <h1
+          class="xs:text-5xl text-balance text-center text-3xl font-semibold sm:text-7xl"
+        >
           Make your vue websites look 10x better
         </h1>
-        <p class="text-balance text-center text-xl text-slate-700">
+        <p class="xs:text-xl text-balance text-center text-lg text-slate-700">
           Copy paste beautiful vue components and use them to build beautiful
           dashboards and trending websites. Free and open-source, accessible and
           customizable.

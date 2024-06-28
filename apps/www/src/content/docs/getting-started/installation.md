@@ -3,7 +3,7 @@ title: Installation
 description: Everything you need to set up psyui.
 ---
 
-**Psyui** is designed for Vue and requires Vue `v3.0.0+`.
+**Psyui** is designed for Vue and requires Vue `v3+`.
 
 <Steps>
 

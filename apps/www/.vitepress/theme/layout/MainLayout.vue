@@ -114,7 +114,7 @@
     </div>
     <footer class="mt-20 border-t border-gray-200 py-10">
       <nav class="mx-auto flex max-w-screen-xl flex-col px-8">
-        <div class="flex justify-around">
+        <div class="grid grid-cols-2 justify-around gap-8 md:flex md:gap-0">
           <div class="flex flex-col gap-3">
             <h3 class="mb-2 font-medium">Inspiration</h3>
             <a
