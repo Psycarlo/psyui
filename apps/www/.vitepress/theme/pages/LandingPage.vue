@@ -87,7 +87,37 @@
     </main>
   </div>
   <div class="border-b border-b-slate-200 bg-slate-50">
-    <section class="mx-auto flex max-w-screen-xl flex-col px-4 py-20">
+    <section class="mx-auto flex max-w-screen-xl flex-col gap-4 px-4 py-20">
+      <div class="flex flex-col gap-4 md:flex-row">
+        <div
+          class="w-full rounded-md bg-slate-50/40 p-1.5 ring-1 ring-inset ring-slate-200/50 md:w-7/12"
+        >
+          <Card class="flex flex-col gap-4 bg-white p-8">
+            <Card class="flex flex-col gap-2">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <CheckCircleIcon class="fill-brand-primary h-5 w-5" />
+                  <span class="font-medium">website.com</span>
+                </div>
+                <span class="text-sm text-slate-500">69% uptime</span>
+              </div>
+              <Tracker :data="trackerData" />
+            </Card>
+            <div class="flex flex-col">
+              <h3 class="mt-2 text-lg font-bold">Uptime!</h3>
+              <p class="mt-1 max-w-lg text-slate-500">
+                Psyui does not help with your server's uptime, but your website
+                will look way better!
+              </p>
+            </div>
+          </Card>
+        </div>
+        <div
+          class="w-full rounded-md bg-slate-50/40 p-1.5 ring-1 ring-inset ring-slate-200/50 md:w-5/12"
+        >
+          <Card class="flex h-full flex-col gap-4 bg-white p-8"> hello </Card>
+        </div>
+      </div>
       <div
         class="rounded-md bg-slate-50/40 p-1.5 ring-1 ring-inset ring-slate-200/50"
       >
@@ -209,9 +239,59 @@
   import SparkAreaChart from '@/lib/registry/ui/SparkAreaChart.vue'
   import ProgressBar from '@/lib/registry/ui/ProgressBar.vue'
   import ProgressCircle from '@/lib/registry/ui/ProgressCircle.vue'
+  import Tracker from '@/lib/registry/ui/Tracker.vue'
   import {
     Square3Stack3DIcon,
     FolderOpenIcon,
-    HeartIcon
+    HeartIcon,
+    CheckCircleIcon
   } from '@heroicons/vue/24/solid'
+
+  const trackerData = [
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'gray' as const, tooltip: 'Offline' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' },
+    { variant: 'primary' as const, tooltip: 'Online' }
+  ]
 </script>

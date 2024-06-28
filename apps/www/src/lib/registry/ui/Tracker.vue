@@ -9,7 +9,8 @@
         'bg-brand-success': entry.variant === 'success',
         'bg-brand-warning': entry.variant === 'warning',
         'bg-brand-danger': entry.variant === 'danger',
-        'bg-brand-info': entry.variant === 'info'
+        'bg-brand-info': entry.variant === 'info',
+        'bg-brand-gray-500': entry.variant === 'gray'
       }"
     ></div>
   </div>
@@ -20,7 +21,14 @@
   import { type HTMLAttributes, computed } from 'vue'
 
   type Entry = {
-    variant: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info'
+    variant:
+      | 'primary'
+      | 'secondary'
+      | 'success'
+      | 'warning'
+      | 'danger'
+      | 'info'
+      | 'gray'
     tooltip: string
   }
 
