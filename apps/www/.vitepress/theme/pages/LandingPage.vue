@@ -92,7 +92,7 @@
         <div
           class="w-full rounded-md bg-slate-50/40 p-1.5 ring-1 ring-inset ring-slate-200/50 md:w-7/12"
         >
-          <Card class="flex flex-col gap-4 bg-white p-8">
+          <Card class="flex h-full flex-col justify-between gap-4 bg-white p-8">
             <Card class="flex flex-col gap-2">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
@@ -103,6 +103,28 @@
               </div>
               <Tracker :data="trackerData" />
             </Card>
+            <div class="flex justify-center gap-4">
+              <Badge
+                variant="filled"
+                class="bg-brand-primaryDark rounded-full font-medium text-white"
+              >
+                <PencilIcon class="h-4 w-4" />
+                Customizable
+              </Badge>
+              <Badge
+                class="border-brand-primary bg-brand-primary text-brand-primary font-medium"
+              >
+                <SparklesIcon class="h-4 w-4" />
+                Beautiful
+              </Badge>
+              <Badge
+                variant="filled"
+                class="bg-brand-primaryDark font-medium text-white"
+              >
+                <FolderOpenIcon class="h-4 w-4" />
+                Open source
+              </Badge>
+            </div>
             <div class="flex flex-col">
               <h3 class="mt-2 text-lg font-bold">Uptime!</h3>
               <p class="mt-1 max-w-lg text-slate-500">
@@ -115,7 +137,22 @@
         <div
           class="w-full rounded-md bg-slate-50/40 p-1.5 ring-1 ring-inset ring-slate-200/50 md:w-5/12"
         >
-          <Card class="flex h-full flex-col gap-4 bg-white p-8"> hello </Card>
+          <Card class="flex h-full flex-col gap-4 bg-white p-8">
+            <Card class="flex flex-col gap-2">
+              <span class="font-medium">Website Analytics</span>
+              <div class="mt-2 flex justify-between">
+                <span class="text-brand-primary text-sm">Url</span>
+                <span class="text-brand-primary text-sm">Views</span>
+              </div>
+              <BarList :data="barListData" />
+            </Card>
+            <div class="flex justify-center">
+              <Button as="a" href="/components" class="group">
+                View More
+                <AnimatedChevron />
+              </Button>
+            </div>
+          </Card>
         </div>
       </div>
       <div
@@ -240,11 +277,17 @@
   import ProgressBar from '@/lib/registry/ui/ProgressBar.vue'
   import ProgressCircle from '@/lib/registry/ui/ProgressCircle.vue'
   import Tracker from '@/lib/registry/ui/Tracker.vue'
+  import BarList from '@/lib/registry/ui/BarList.vue'
+  import Button from '@/lib/registry/ui/Button.vue'
+  import AnimatedChevron from '@/lib/registry/ui/AnimatedChevron.vue'
+  import Badge from '@/lib/registry/ui/Badge.vue'
   import {
     Square3Stack3DIcon,
     FolderOpenIcon,
     HeartIcon,
-    CheckCircleIcon
+    CheckCircleIcon,
+    PencilIcon,
+    SparklesIcon
   } from '@heroicons/vue/24/solid'
 
   const trackerData = [
@@ -293,5 +336,12 @@
     { variant: 'primary' as const, tooltip: 'Online' },
     { variant: 'primary' as const, tooltip: 'Online' },
     { variant: 'primary' as const, tooltip: 'Online' }
+  ]
+
+  const barListData = [
+    { name: '/mempool', value: 69 },
+    { name: '/lightning', value: 128 },
+    { name: '/utxos', value: 420 },
+    { name: '/bitcoin', value: 489 }
   ]
 </script>

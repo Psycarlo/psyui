@@ -37,16 +37,6 @@ export const docsConfig: DocsConfig = {
         { title: 'Card', href: '/docs/common/card', label: 'New' },
         { title: 'Kbd', href: '/docs/common/kbd', label: 'New' },
         {
-          title: 'Progress Bar',
-          href: '/docs/common/progress-bar',
-          label: 'New'
-        },
-        {
-          title: 'Progress Circle',
-          href: '/docs/common/progress-circle',
-          label: 'New'
-        },
-        {
           title: 'Tooltip',
           href: '/docs/common/tooltip',
           label: 'New'
@@ -56,6 +46,21 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Visualizations',
       items: [
+        {
+          title: 'Bar List',
+          href: '/docs/visualizations/bar-list',
+          label: 'New'
+        },
+        {
+          title: 'Progress Bar',
+          href: '/docs/common/progress-bar',
+          label: 'New'
+        },
+        {
+          title: 'Progress Circle',
+          href: '/docs/common/progress-circle',
+          label: 'New'
+        },
         {
           title: 'Spark Area Chart',
           href: '/docs/visualizations/spark-area-chart',

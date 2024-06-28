@@ -111,6 +111,19 @@
       img: '/images/components/kbd.webp'
     },
     {
+      title: 'Tooltip',
+      href: '/docs/common/tooltip',
+      img: '/images/components/tooltip.webp'
+    }
+  ]
+
+  const visualizationComponents: ComponentCardProps[] = [
+    {
+      title: 'Bar List',
+      href: '/docs/visualizations/bar-list',
+      img: '/images/components/bar-list.webp'
+    },
+    {
       title: 'Progress Bar',
       href: '/docs/common/progress-bar',
       img: '/images/components/progress-bar.webp'
@@ -120,14 +133,6 @@
       href: '/docs/common/progress-circle',
       img: '/images/components/progress-circle.webp'
     },
-    {
-      title: 'Tooltip',
-      href: '/docs/common/tooltip',
-      img: '/images/components/tooltip.webp'
-    }
-  ]
-
-  const visualizationComponents: ComponentCardProps[] = [
     {
       title: 'Spark Area Chart',
       href: '/docs/visualizations/spark-area-chart',
