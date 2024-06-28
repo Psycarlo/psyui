@@ -9,7 +9,10 @@
     </div>
     <Tracker :data="data">
       <template v-for="(entry, index) in data" #[index]>
-        <span class="inline-flex items-center gap-1">
+        <span
+          class="inline-flex items-center gap-1"
+          :class="{ hidden: !entry.tooltip }"
+        >
           <CheckCircleIcon
             v-if="entry.tooltip === 'Operational'"
             class="h-4 w-4"
@@ -56,6 +59,7 @@
     { variant: 'primary', tooltip: 'Operational' },
     { variant: 'primary', tooltip: 'Operational' },
     { variant: 'primary', tooltip: 'Operational' },
+    { variant: 'gray' },
     { variant: 'primary', tooltip: 'Operational' }
   ]
 </script>

@@ -23,7 +23,7 @@
         <HoverCardContent
           side="top"
           :side-offset="5"
-          class="font-brand bg-brand-dark rounded-md px-2 py-1 text-white"
+          class="font-brand bg-brand-dark hidden rounded-md px-2 py-1 text-white has-[:not(.hidden)]:block"
         >
           <slot :name="index" />
         </HoverCardContent>
