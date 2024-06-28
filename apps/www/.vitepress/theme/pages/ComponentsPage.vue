@@ -83,7 +83,7 @@
     {
       title: 'Accordion',
       href: '/docs/common/accordion',
-      img: '/images/components/card.webp'
+      img: '/images/components/accordion.webp'
     },
     {
       title: 'Badge',
@@ -93,12 +93,12 @@
     {
       title: 'Button',
       href: '/docs/common/button',
-      img: '/images/components/card.webp'
+      img: '/images/components/button.webp'
     },
     {
       title: 'Callout',
       href: '/docs/common/callout',
-      img: '/images/components/card.webp'
+      img: '/images/components/callout.webp'
     },
     {
       title: 'Card',
@@ -113,17 +113,17 @@
     {
       title: 'Progress Bar',
       href: '/docs/common/progress-bar',
-      img: '/images/components/card.webp'
+      img: '/images/components/progress-bar.webp'
     },
     {
       title: 'Progress Circle',
       href: '/docs/common/progress-circle',
-      img: '/images/components/card.webp'
+      img: '/images/components/progress-circle.webp'
     },
     {
       title: 'Tooltip',
       href: '/docs/common/tooltip',
-      img: '/images/components/card.webp'
+      img: '/images/components/tooltip.webp'
     }
   ]
 
