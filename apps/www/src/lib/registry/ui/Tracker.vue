@@ -1,24 +1,42 @@
 <template>
   <div :class="trackerClass">
-    <div
-      v-for="entry in props.data"
-      class="h-full w-3 rounded-[1px] first:rounded-l-[4px] last:rounded-r-[4px]"
-      :class="{
-        'bg-brand-primary': entry.variant === 'primary',
-        'bg-brand-secondary': entry.variant === 'secondary',
-        'bg-brand-success': entry.variant === 'success',
-        'bg-brand-warning': entry.variant === 'warning',
-        'bg-brand-danger': entry.variant === 'danger',
-        'bg-brand-info': entry.variant === 'info',
-        'bg-brand-gray-500': entry.variant === 'gray'
-      }"
-    ></div>
+    <HoverCardRoot v-for="entry in props.data" :open-delay="0" :closeDelay="0">
+      <HoverCardTrigger as-child>
+        <div
+          class="h-full w-3 rounded-[1px] first:rounded-l-[4px] last:rounded-r-[4px]"
+          :class="{
+            'bg-brand-primary': entry.variant === 'primary',
+            'bg-brand-secondary': entry.variant === 'secondary',
+            'bg-brand-success': entry.variant === 'success',
+            'bg-brand-warning': entry.variant === 'warning',
+            'bg-brand-danger': entry.variant === 'danger',
+            'bg-brand-info': entry.variant === 'info',
+            'bg-brand-gray-500': entry.variant === 'gray'
+          }"
+        ></div>
+      </HoverCardTrigger>
+      <HoverCardPortal>
+        <HoverCardContent
+          side="top"
+          :side-offset="5"
+          class="font-brand bg-brand-dark rounded-md px-2 py-1 text-white"
+        >
+          <span>{{ entry.tooltip }}</span>
+        </HoverCardContent>
+      </HoverCardPortal>
+    </HoverCardRoot>
   </div>
 </template>
 
 <script setup lang="ts">
   import { tv } from 'tailwind-variants'
   import { type HTMLAttributes, computed } from 'vue'
+  import {
+    HoverCardRoot,
+    HoverCardTrigger,
+    HoverCardPortal,
+    HoverCardContent
+  } from 'radix-vue'
 
   type Entry = {
     variant:

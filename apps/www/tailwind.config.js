@@ -21,6 +21,9 @@ export default {
           white: '#FFFFFF',
           black: '#000000',
 
+          light: '#F4F4F4',
+          dark: colors.green[950],
+
           primary: '#04AA6D',
           primaryLight: '#07C680',
           primaryDark: '#038857',
