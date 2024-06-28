@@ -88,7 +88,7 @@
     {
       title: 'Badge',
       href: '/docs/common/badge',
-      img: '/images/components/card.webp'
+      img: '/images/components/badge.webp'
     },
     {
       title: 'Button',
@@ -108,7 +108,7 @@
     {
       title: 'Kbd',
       href: '/docs/common/kbd',
-      img: '/images/components/card.webp'
+      img: '/images/components/kbd.webp'
     },
     {
       title: 'Progress Bar',
@@ -131,12 +131,12 @@
     {
       title: 'Spark Area Chart',
       href: '/docs/visualizations/spark-area-chart',
-      img: '/images/components/card.webp'
+      img: '/images/components/spark-area-chart.webp'
     },
     {
       title: 'Spark Line Chart',
       href: '/docs/visualizations/spark-line-chart',
-      img: '/images/components/card.webp'
+      img: '/images/components/spark-line-chart.webp'
     }
   ]
 
@@ -144,7 +144,7 @@
     {
       title: 'Marquee',
       href: '/docs/trending/marquee',
-      img: '/images/components/card.webp'
+      img: '/images/components/marquee.webp'
     }
   ]
 
@@ -152,7 +152,7 @@
     {
       title: 'Animated Chevron Icon',
       href: '/docs/others/animated-chevron',
-      img: '/images/components/card.webp'
+      img: '/images/components/animated-chevron.webp'
     }
   ]
 </script>

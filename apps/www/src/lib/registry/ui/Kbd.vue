@@ -9,7 +9,9 @@
     >
       {{ kbdKeysMap[key] }}
     </abbr>
-    <slot />
+    <span>
+      <slot />
+    </span>
   </component>
 </template>
 
