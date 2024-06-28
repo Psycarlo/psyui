@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
   type AnimatedChevronProps = {
-    direction: 'left' | 'right'
+    direction?: 'left' | 'right'
   }
 
   const props = withDefaults(defineProps<AnimatedChevronProps>(), {

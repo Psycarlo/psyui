@@ -5,6 +5,8 @@
       :x="(d: DataRecord) => d.x"
       :y="(d: DataRecord) => d.y"
       color="#04AA6D"
+      :scaleByDomain="true"
+      :yDomain="[props.min || min, props.max || max]"
     />
   </VisXYContainer>
 </template>
@@ -18,6 +20,8 @@
 
   const props = defineProps<{
     data: DataRecord[]
+    min?: number
+    max?: number
     class?: HTMLAttributes['class']
   }>()
 
@@ -26,4 +30,8 @@
       base: 'h-[40px] !w-[144px]'
     })(props)
   )
+
+  const yValues = props.data.map((record) => record.y)
+  const min = Math.min(...yValues)
+  const max = Math.max(...yValues)
 </script>

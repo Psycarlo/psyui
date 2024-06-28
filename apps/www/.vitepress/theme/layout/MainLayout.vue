@@ -6,8 +6,8 @@
         class="mx-auto flex max-w-screen-xl items-center justify-between px-8 py-4"
       >
         <Logo />
-        <div class="flex items-center gap-6">
-          <ul class="flex items-center gap-6 text-sm">
+        <div class="flex items-center gap-4 sm:gap-6">
+          <ul class="flex items-center gap-4 text-sm sm:gap-6">
             <li>
               <a href="/docs/getting-started/introduction" class="font-medium">
                 <span class="hidden sm:inline-block">Docs</span>

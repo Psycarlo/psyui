@@ -1,5 +1,10 @@
 <template>
-  <VisXYContainer :class="containerClass" :svgDefs="svgDefs">
+  <VisXYContainer
+    :class="containerClass"
+    :svgDefs="svgDefs"
+    :scaleByDomain="true"
+    :yDomain="[props.min || min, props.max || max]"
+  >
     <VisLine
       :data="data"
       :x="(d: DataRecord) => d.x"
@@ -24,6 +29,8 @@
 
   const props = defineProps<{
     data: DataRecord[]
+    min?: number
+    max?: number
     class?: HTMLAttributes['class']
   }>()
 
@@ -32,6 +39,10 @@
       base: 'h-[40px] !w-[144px]'
     })(props)
   )
+
+  const yValues = props.data.map((record) => record.y)
+  const min = Math.min(...yValues)
+  const max = Math.max(...yValues)
 
   const svgDefs = `
     <linearGradient id="gradient" gradientTransform="rotate(90)">
