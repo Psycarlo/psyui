@@ -12,7 +12,7 @@ description: User photographic identity.
 ### Install dependencies
 
 ```bash
-npm install tailwind-variants
+npm install tailwind-variants radix-vue
 ```
 
 ### Add component
