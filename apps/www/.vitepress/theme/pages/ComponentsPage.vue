@@ -106,6 +106,11 @@
       img: '/images/components/card.webp'
     },
     {
+      title: 'Kbd',
+      href: '/docs/common/kbd',
+      img: '/images/components/card.webp'
+    },
+    {
       title: 'Progress Bar',
       href: '/docs/common/progress-bar',
       img: '/images/components/card.webp'
@@ -113,6 +118,11 @@
     {
       title: 'Progress Circle',
       href: '/docs/common/progress-circle',
+      img: '/images/components/card.webp'
+    },
+    {
+      title: 'Tooltip',
+      href: '/docs/common/tooltip',
       img: '/images/components/card.webp'
     }
   ]

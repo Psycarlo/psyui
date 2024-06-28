@@ -48,7 +48,7 @@
           {{ frontmatter.description }}
         </p>
       </div>
-      <div class="vp-doc mt-6">
+      <div class="vp-doc mb-12 mt-6">
         <slot />
       </div>
       <EditLink />

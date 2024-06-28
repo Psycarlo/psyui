@@ -35,6 +35,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Button', href: '/docs/common/button', label: 'New' },
         { title: 'Callout', href: '/docs/common/callout', label: 'New' },
         { title: 'Card', href: '/docs/common/card', label: 'New' },
+        { title: 'Kbd', href: '/docs/common/kbd', label: 'New' },
         {
           title: 'Progress Bar',
           href: '/docs/common/progress-bar',
@@ -43,6 +44,11 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Progress Circle',
           href: '/docs/common/progress-circle',
+          label: 'New'
+        },
+        {
+          title: 'Tooltip',
+          href: '/docs/common/tooltip',
           label: 'New'
         }
       ]

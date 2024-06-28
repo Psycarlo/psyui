@@ -17,10 +17,11 @@
     "@unovis/ts": "^1.4.1",
     "@unovis/vue": "^1.4.1",
     "@vueuse/core": "^10.11.0",
+    "floating-vue": "^5.2.2",
     "magic-string": "^0.30.10",
-    "radix-vue": "^1.8.4",
+    "radix-vue": "^1.8.5",
     "tailwind-variants": "^0.2.1",
-    "vue": "^3.4.29"
+    "vue": "^3.4.30"
   },
   "devDependencies": {
     "@types/node": "^20.14.5",
