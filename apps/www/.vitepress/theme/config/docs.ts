@@ -65,6 +65,11 @@ export const docsConfig: DocsConfig = {
           title: 'Spark Line Chart',
           href: '/docs/visualizations/spark-line-chart',
           label: 'New'
+        },
+        {
+          title: 'Tracker',
+          href: '/docs/visualizations/tracker',
+          label: 'New'
         }
       ]
     },

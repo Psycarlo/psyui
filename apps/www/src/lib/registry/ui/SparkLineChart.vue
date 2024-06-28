@@ -18,12 +18,14 @@
 
   type DataRecord = { x: number; y: number }
 
-  const props = defineProps<{
+  type SparkLineChartProps = {
     data: DataRecord[]
     min?: number
     max?: number
     class?: HTMLAttributes['class']
-  }>()
+  }
+
+  const props = defineProps<SparkLineChartProps>()
 
   const containerClass = computed(() =>
     tv({

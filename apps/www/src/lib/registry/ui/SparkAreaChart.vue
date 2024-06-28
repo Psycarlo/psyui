@@ -27,12 +27,14 @@
 
   type DataRecord = { x: number; y: number }
 
-  const props = defineProps<{
+  type SparkAreaChartProps = {
     data: DataRecord[]
     min?: number
     max?: number
     class?: HTMLAttributes['class']
-  }>()
+  }
+
+  const props = defineProps<SparkAreaChartProps>()
 
   const containerClass = computed(() =>
     tv({

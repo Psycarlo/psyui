@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
@@ -22,18 +24,18 @@ export default {
           secondaryLight: '#065AEC',
           secondaryDark: '#033488',
 
-          success: '',
-          successLight: '',
-          sucessDark: '',
-          warning: '',
-          warningLight: '',
-          warningDark: '',
+          success: colors.gray[500],
+          successLight: colors.gray[400],
+          sucessDark: colors.gray[600],
+          warning: '#FFCC00',
+          warningLight: '#FFD633',
+          warningDark: '#CCA300',
           danger: '#EF4444',
           dangerLight: '#F87171',
           dangerDark: '#DC2626',
-          info: '',
-          infoLight: '',
-          infoDark: '',
+          info: '#007BFF',
+          infoLight: '#3395FF',
+          infoDark: '#0076F5',
 
           gray: {
             50: '#f8f8f8',

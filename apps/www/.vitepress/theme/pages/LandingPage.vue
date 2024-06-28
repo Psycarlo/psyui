@@ -159,7 +159,7 @@
     <h2 class="max-w-2xl text-3xl font-bold">
       Ready to use, yet customizable components for your vue projects
     </h2>
-    <div class="mt-6 flex w-full justify-between gap-6">
+    <div class="mt-6 flex w-full flex-col justify-between gap-4 md:flex-row">
       <Card class="flex flex-col gap-1 border-none shadow-none">
         <div
           class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 p-3"

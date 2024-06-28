@@ -137,6 +137,11 @@
       title: 'Spark Line Chart',
       href: '/docs/visualizations/spark-line-chart',
       img: '/images/components/spark-line-chart.webp'
+    },
+    {
+      title: 'Tracker',
+      href: '/docs/visualizations/tracker',
+      img: '/images/components/tracker.webp'
     }
   ]
 
