@@ -1,6 +1,10 @@
 <template>
   <div :class="trackerClass">
-    <HoverCardRoot v-for="entry in props.data" :open-delay="0" :closeDelay="0">
+    <HoverCardRoot
+      v-for="(entry, index) in props.data"
+      :open-delay="0"
+      :closeDelay="0"
+    >
       <HoverCardTrigger as-child>
         <div
           class="h-full w-3 rounded-[1px] first:rounded-l-[4px] last:rounded-r-[4px]"
@@ -21,7 +25,7 @@
           :side-offset="5"
           class="font-brand bg-brand-dark rounded-md px-2 py-1 text-white"
         >
-          <span>{{ entry.tooltip }}</span>
+          <slot :name="index" />
         </HoverCardContent>
       </HoverCardPortal>
     </HoverCardRoot>
@@ -47,7 +51,6 @@
       | 'danger'
       | 'info'
       | 'gray'
-    tooltip: string
   }
 
   type TrackerProps = {
