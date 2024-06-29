@@ -90,6 +90,10 @@ export const docsConfig: DocsConfig = {
       ]
     },
     {
+      title: 'Bitcoin',
+      items: [{ title: 'Shorten', href: '/docs/bitcoin/shorten', label: 'New' }]
+    },
+    {
       title: 'Others',
       items: [
         {
