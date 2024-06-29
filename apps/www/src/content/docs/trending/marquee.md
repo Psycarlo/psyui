@@ -1,6 +1,7 @@
 ---
 title: Marquee
 description: An infinite scrolling component that can be used to display text, images, or videos.
+inspiration: https://magicui.design/docs/components/marquee
 ---
 
 <ComponentPreview name="Marquee" />

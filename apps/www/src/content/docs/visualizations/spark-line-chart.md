@@ -1,6 +1,8 @@
 ---
 title: Spark Line Chart
 description: Visualize data in a small format.
+primitive: https://unovis.dev/docs/containers/XY_Container
+inspiration: https://www.tremor.so/docs/visualizations/spark-charts
 ---
 
 <ComponentPreview name="SparkLineChart" />

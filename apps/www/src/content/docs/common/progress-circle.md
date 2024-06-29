@@ -1,6 +1,7 @@
 ---
 title: Progress Circle
 description: A circular shape that indicates progress, performance or status.
+inspiration: https://www.tremor.so/docs/visualizations/progress-circle
 ---
 
 <ComponentPreview name="ProgressCircle" />

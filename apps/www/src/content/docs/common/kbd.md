@@ -1,6 +1,7 @@
 ---
 title: Kbd
 description: Keyboard key is a component to display which key or combination of keys performs a given action.
+inspiration: https://nextui.org/docs/components/kbd
 ---
 
 <ComponentPreview name="Kbd" />

@@ -1,6 +1,7 @@
 ---
 title: Tracker
 description: Component for visualizing data related to monitoring.
+inspiration: https://www.tremor.so/docs/visualizations/tracker
 ---
 
 <ComponentPreview name="Tracker" />

@@ -48,6 +48,23 @@
           {{ frontmatter.description }}
         </p>
       </div>
+      <ul class="mt-6 flex gap-3 border-b border-slate-200 px-1 py-2">
+        <li>
+          <ExternalLink
+            :href="`https://github.com/Psycarlo/psyui/blob/main/apps/www/src/lib/registry/ui/${frontmatter.title.replaceAll(' ', '')}.vue`"
+          >
+            Github
+          </ExternalLink>
+        </li>
+        <li v-if="frontmatter.primitive">
+          <ExternalLink :href="frontmatter.primitive"> Primitive </ExternalLink>
+        </li>
+        <li v-if="frontmatter.inspiration">
+          <ExternalLink :href="frontmatter.inspiration">
+            Inspiration
+          </ExternalLink>
+        </li>
+      </ul>
       <div class="vp-doc mb-12 mt-6">
         <slot />
       </div>
@@ -61,6 +78,7 @@
   import { useData, useRoute } from 'vitepress'
   import { docsConfig } from '../config/docs'
   import EditLink from '../components/EditLink.vue'
+  import ExternalLink from '../components/ExternalLink.vue'
 
   const route = useRoute()
   const { frontmatter } = useData()

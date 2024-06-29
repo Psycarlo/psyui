@@ -1,6 +1,7 @@
 ---
 title: Animated Chevron Icon
 description: Hover the chevron and it becomes an arrow.
+inspiration: https://www.tremor.so/
 ---
 
 <ComponentPreview name="AnimatedChevron" />

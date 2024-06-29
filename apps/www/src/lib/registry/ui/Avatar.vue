@@ -13,7 +13,7 @@
   import { type HTMLAttributes, computed } from 'vue'
 
   type AvatarProps = {
-    src: string
+    src?: string
     alt?: string
     class?: HTMLAttributes['class']
   }

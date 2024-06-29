@@ -1,6 +1,7 @@
 ---
 title: Progress Bar
 description: A bar that indicates progress, performance or status.
+inspiration: https://raw.tremor.so/docs/visualizations/progress-bar
 ---
 
 <ComponentPreview name="ProgressBar" />

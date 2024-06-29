@@ -1,6 +1,7 @@
 ---
 title: Avatar
 description: User photographic identity.
+primitive: https://www.radix-vue.com/components/avatar.html
 ---
 
 <ComponentPreview name="Avatar" />

@@ -1,6 +1,7 @@
 ---
 title: Bar List
 description: Horizontal bars with a customizable label inside.
+inspiration: https://www.tremor.so/docs/visualizations/bar-list
 ---
 
 <ComponentPreview name="BarList" />
