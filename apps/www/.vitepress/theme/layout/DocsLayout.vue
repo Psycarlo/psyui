@@ -48,7 +48,10 @@
           {{ frontmatter.description }}
         </p>
       </div>
-      <ul class="mt-6 flex gap-3 border-b border-slate-200 px-1 py-2">
+      <ul
+        v-if="!route.path.includes('getting-started')"
+        class="mt-6 flex gap-3 border-b border-slate-200 px-1 py-2"
+      >
         <li v-if="frontmatter.title">
           <ExternalLink
             :href="`https://github.com/Psycarlo/psyui/blob/main/apps/www/src/lib/registry/ui/${frontmatter.title.replaceAll(' ', '')}.vue`"
