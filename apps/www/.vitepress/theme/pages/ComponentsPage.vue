@@ -185,6 +185,11 @@
       img: '/images/components/block.webp'
     },
     {
+      title: 'QRCode',
+      href: '/docs/bitcoin/qrcode',
+      img: '/images/components/block.webp'
+    },
+    {
       title: 'Shorten',
       href: '/docs/bitcoin/shorten',
       img: '/images/components/shorten.webp'

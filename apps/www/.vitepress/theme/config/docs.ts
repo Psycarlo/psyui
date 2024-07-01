@@ -93,6 +93,7 @@ export const docsConfig: DocsConfig = {
       title: 'Bitcoin',
       items: [
         { title: 'Block', href: '/docs/bitcoin/block', label: 'New' },
+        { title: 'QRCode', href: '/docs/bitcoin/qrcode', label: 'New' },
         { title: 'Shorten', href: '/docs/bitcoin/shorten', label: 'New' }
       ]
     },
