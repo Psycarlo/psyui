@@ -253,6 +253,7 @@
         </div>
       </nav>
     </footer>
+    <Sonner />
   </div>
 </template>
 
@@ -262,6 +263,7 @@
   import Announcement from '../components/Announcement.vue'
   import Logo from '../components/Logo.vue'
   import { ref, onMounted } from 'vue'
+  import Sonner from '@/lib/registry/ui/Sonner.vue'
 
   const $route = useRoute()
 

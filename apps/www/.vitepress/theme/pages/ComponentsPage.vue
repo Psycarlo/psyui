@@ -131,6 +131,11 @@
       img: '/images/components/kbd.webp'
     },
     {
+      title: 'Sonner',
+      href: '/docs/common/sonner',
+      img: '/images/components/sonner.webp'
+    },
+    {
       title: 'Tooltip',
       href: '/docs/common/tooltip',
       img: '/images/components/tooltip.webp'
