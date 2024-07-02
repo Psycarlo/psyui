@@ -1,5 +1,5 @@
 <template>
-  <QRCode />
+  <QRCode value="https://psyui.com" />
 </template>
 
 <script setup lang="ts">

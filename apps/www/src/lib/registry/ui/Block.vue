@@ -4,7 +4,7 @@
       class="absolute left-[calc(-.16*100%)] top-[calc(-.192*100%)] h-[calc(.192*100%)] w-full origin-top skew-x-[40deg] transform-gpu bg-inherit brightness-[0.85] filter"
     ></div>
     <div
-      class="absolute left-[calc(-.16*100%)] top-[calc(-.097*100%)] h-full w-[calc(.16*100%)] origin-top skew-y-[50deg] transform-gpu bg-inherit brightness-[1.15] filter"
+      class="absolute left-[calc(-.16*100%)] top-[calc(-.096*100%)] h-full w-[calc(.16*100%)] origin-top skew-y-[50deg] transform-gpu bg-inherit brightness-[1.15] filter"
     ></div>
     <slot />
   </div>

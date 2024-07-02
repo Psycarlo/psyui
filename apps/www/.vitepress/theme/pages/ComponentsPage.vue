@@ -179,7 +179,7 @@
     {
       title: 'Number Ticker',
       href: '/docs/trending/number-ticker',
-      img: '/images/components/marquee.webp'
+      img: '/images/components/number-ticker.webp'
     }
   ]
 
@@ -192,7 +192,7 @@
     {
       title: 'QRCode',
       href: '/docs/bitcoin/qrcode',
-      img: '/images/components/block.webp'
+      img: '/images/components/qrcode.webp'
     },
     {
       title: 'Shorten',
