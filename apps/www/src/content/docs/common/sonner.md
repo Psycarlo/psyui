@@ -45,3 +45,22 @@ import { toast } from 'vue-sonner'
 
 toast('Block has been mined')
 ```
+
+If you want to customize the colors and use your `tailwind.config.js` **psyui** colors, edit your `Sonner` component - use the `group-[.sonner]:` to style it:
+
+## Customization
+
+```vue
+<Sonner
+  ...
+  :toast-options="{
+      classes: {
+        ...,
+        success: 'group-[.sonner]:text-brand-success',
+        warning: 'group-[.sonner]:text-brand-warning',
+        error: 'group-[.sonner]:text-brand-danger',
+        info: 'group-[.sonner]:text-brand-info',
+      }
+    }"
+/>
+```

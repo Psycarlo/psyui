@@ -1,5 +1,17 @@
 <template>
-  <Sonner v-bind="sonnerProps" />
+  <Sonner
+    class="sonner group"
+    v-bind="sonnerProps"
+    :toast-options="{
+      classes: {
+        toast: 'sonner group font-brand group-[.toaster]:shadow-lg',
+        actionButton:
+          'group-[.sonner]:bg-brand-primary group-[.sonner]:text-brand-light',
+        cancelButton:
+          'group-[.sonner]:bg-brand-danger group-[.sonner]:text-brand-light'
+      }
+    }"
+  />
 </template>
 
 <script setup lang="ts">
