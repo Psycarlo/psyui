@@ -175,6 +175,11 @@
       title: 'Marquee',
       href: '/docs/trending/marquee',
       img: '/images/components/marquee.webp'
+    },
+    {
+      title: 'Number Ticker',
+      href: '/docs/trending/number-ticker',
+      img: '/images/components/marquee.webp'
     }
   ]
 
