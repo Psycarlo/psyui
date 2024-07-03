@@ -8,7 +8,7 @@
   import { tv } from 'tailwind-variants'
   import { type HTMLAttributes, computed, reactive, watch, ref } from 'vue'
   import { useElementVisibility } from '@vueuse/core'
-  import anime from 'animejs/lib/anime.es.js'
+  import anime from 'animejs'
 
   type NumberTickerProps = {
     value: number

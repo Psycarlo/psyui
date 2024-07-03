@@ -4,7 +4,7 @@
     :delay="1.5"
     :decimals="2"
     :duration="6"
-    class="font-mono text-4xl font-bold"
+    class="font-mono text-5xl font-bold"
   />
 </template>
 

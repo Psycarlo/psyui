@@ -4,7 +4,7 @@
     v-bind="sonnerProps"
     :toast-options="{
       classes: {
-        toast: 'sonner group font-brand group-[.toaster]:shadow-lg',
+        toast: 'sonner group font-brand group-[.sonner]:shadow-lg',
         actionButton:
           'group-[.sonner]:bg-brand-primary group-[.sonner]:text-brand-light',
         cancelButton:

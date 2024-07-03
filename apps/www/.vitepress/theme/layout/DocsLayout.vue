@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto flex max-w-screen-xl px-8">
     <aside
-      class="mt-6 hidden w-60 flex-col gap-4 border-r border-slate-200 lg:flex"
+      class="mt-6 hidden w-60 min-w-[240px] flex-col gap-4 border-r border-slate-200 lg:flex"
     >
       <div v-for="docsGroup in docsConfig.sidebarNav" :key="docsGroup.title">
         <h3 class="text-sm font-bold">
@@ -38,7 +38,7 @@
         </ul>
       </div>
     </aside>
-    <main class="mt-8 max-w-4xl flex-1 px-8 lg:ml-12">
+    <main class="mt-8 max-w-4xl flex-1 lg:ml-12 lg:px-4">
       <div class="flex flex-col gap-3">
         <p class="text-brand-primary font-medium capitalize">
           {{ subtitle }}
