@@ -51,6 +51,7 @@
       | 'danger'
       | 'info'
       | 'gray'
+      | string
   }
 
   type TrackerProps = {

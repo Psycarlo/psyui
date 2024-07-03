@@ -105,7 +105,21 @@
                   69% uptime
                 </span>
               </div>
-              <Tracker :data="trackerData" />
+              <Tracker :data="trackerData">
+                <template v-for="(entry, index) in trackerData" #[index]>
+                  <span class="inline-flex items-center gap-1">
+                    <CheckCircleIcon
+                      v-if="entry.tooltip === 'Online'"
+                      class="h-4 w-4"
+                    />
+                    <XCircleIcon
+                      v-if="entry.tooltip === 'Offline'"
+                      class="h-4 w-4"
+                    />
+                    {{ entry.tooltip }}
+                  </span>
+                </template>
+              </Tracker>
             </Card>
             <div
               class="flex flex-col items-center justify-center gap-4 sm:flex-row"
@@ -292,6 +306,7 @@
     FolderOpenIcon,
     HeartIcon,
     CheckCircleIcon,
+    XCircleIcon,
     PencilIcon,
     SparklesIcon
   } from '@heroicons/vue/24/solid'
