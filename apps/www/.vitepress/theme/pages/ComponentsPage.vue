@@ -131,6 +131,11 @@
       img: '/images/components/kbd.webp'
     },
     {
+      title: 'Sonner',
+      href: '/docs/common/sonner',
+      img: '/images/components/sonner.webp'
+    },
+    {
       title: 'Tooltip',
       href: '/docs/common/tooltip',
       img: '/images/components/tooltip.webp'
@@ -175,6 +180,11 @@
       title: 'Marquee',
       href: '/docs/trending/marquee',
       img: '/images/components/marquee.webp'
+    },
+    {
+      title: 'Number Ticker',
+      href: '/docs/trending/number-ticker',
+      img: '/images/components/number-ticker.webp'
     }
   ]
 
@@ -183,6 +193,11 @@
       title: 'Block',
       href: '/docs/bitcoin/block',
       img: '/images/components/block.webp'
+    },
+    {
+      title: 'QRCode',
+      href: '/docs/bitcoin/qrcode',
+      img: '/images/components/qrcode.webp'
     },
     {
       title: 'Shorten',

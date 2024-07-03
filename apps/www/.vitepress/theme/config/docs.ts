@@ -37,6 +37,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Callout', href: '/docs/common/callout', label: 'New' },
         { title: 'Card', href: '/docs/common/card', label: 'New' },
         { title: 'Kbd', href: '/docs/common/kbd', label: 'New' },
+        { title: 'Sonner', href: '/docs/common/sonner', label: 'New' },
         {
           title: 'Tooltip',
           href: '/docs/common/tooltip',
@@ -86,6 +87,11 @@ export const docsConfig: DocsConfig = {
           title: 'Marquee',
           href: '/docs/trending/marquee',
           label: 'New'
+        },
+        {
+          title: 'Number Ticker',
+          href: '/docs/trending/number-ticker',
+          label: 'New'
         }
       ]
     },
@@ -93,6 +99,7 @@ export const docsConfig: DocsConfig = {
       title: 'Bitcoin',
       items: [
         { title: 'Block', href: '/docs/bitcoin/block', label: 'New' },
+        { title: 'QRCode', href: '/docs/bitcoin/qrcode', label: 'New' },
         { title: 'Shorten', href: '/docs/bitcoin/shorten', label: 'New' }
       ]
     },
