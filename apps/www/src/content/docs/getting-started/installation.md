@@ -30,53 +30,57 @@ export default {
     extend: {
       ...,
       colors: {
-        white: '',
-        black: '',
+        brand: {
+          white: '',
+          black: '',
 
-        light: '',
-        dark: '',
+          light: '',
+          dark: '',
 
-        primary: '',
-        primaryLight: '',
-        primaryDark: '',
+          primary: '',
+          primaryLight: '',
+          primaryDark: '',
 
-        secondary: '',
-        secondaryLight: '',
-        secondaryDark: '',
+          secondary: '',
+          secondaryLight: '',
+          secondaryDark: '',
 
-        success: '',
-        successLight: '',
-        seccessDark: '',
-        warning: '',
-        warningLight: '',
-        warningDark: '',
-        danger: '',
-        dangerLight: '',
-        dangerDark: '',
-        info: '',
-        infoLight: '',
-        infoDark: '',
+          success: '',
+          successLight: '',
+          seccessDark: '',
+          warning: '',
+          warningLight: '',
+          warningDark: '',
+          danger: '',
+          dangerLight: '',
+          dangerDark: '',
+          info: '',
+          infoLight: '',
+          infoDark: '',
 
-        gray: {
-          50: '',
-          100: '',
-          200: '',
-          300: '',
-          400: '',
-          500: '',
-          600: '',
-          700: '',
-          800: '',
-          900: '',
-          1000: '',
-          1100: '',
-          1200: ''
+          gray: {
+            50: '',
+            100: '',
+            200: '',
+            300: '',
+            400: '',
+            500: '',
+            600: '',
+            700: '',
+            800: '',
+            900: '',
+            1000: '',
+            1100: '',
+            1200: ''
+          }
         }
       }
     }
   }
 }
 ```
+
+We use the keyword `brand`, example: `bg-brand-primary`.
 
 ### Update path alias
 
