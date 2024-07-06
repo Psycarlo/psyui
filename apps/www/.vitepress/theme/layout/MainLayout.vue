@@ -112,11 +112,11 @@
         <Content :key="$route.path" />
       </div>
     </div>
-    <footer class="mt-20 border-t border-gray-200 py-10">
+    <footer class="mt-12 border-t border-gray-200 py-10">
       <nav class="mx-auto flex max-w-screen-xl flex-col px-8">
         <div class="grid grid-cols-2 justify-around gap-8 md:flex md:gap-0">
           <div class="flex flex-col gap-3">
-            <h3 class="mb-2 font-medium">Inspiration</h3>
+            <h3 class="mb-2 text-sm font-medium">Inspiration</h3>
             <a
               href="https://www.shadcn-vue.com/"
               target="_blank"
@@ -161,7 +161,7 @@
             </a>
           </div>
           <div class="flex flex-col gap-3">
-            <h3 class="mb-2 font-medium">Support</h3>
+            <h3 class="mb-2 text-sm font-medium">Support</h3>
             <a
               href="/docs/getting-started/introduction"
               class="text-sm text-slate-600 hover:text-slate-900"
@@ -176,7 +176,7 @@
             </a>
           </div>
           <div class="flex flex-col gap-3">
-            <h3 class="mb-2 font-medium">More psy</h3>
+            <h3 class="mb-2 text-sm font-medium">More psy</h3>
             <a
               href="https://psylibrary.com"
               target="_blank"
@@ -200,7 +200,7 @@
             </a>
           </div>
           <div class="flex flex-col gap-3">
-            <h3 class="mb-2 font-medium">Quick links</h3>
+            <h3 class="mb-2 text-sm font-medium">Quick links</h3>
             <a
               href="/docs/getting-started/introduction"
               class="text-sm text-slate-600 hover:text-slate-900"

@@ -239,7 +239,7 @@
       </div>
     </section>
   </div>
-  <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
+  <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 pb-10 pt-20">
     <span class="text-brand-primary font-semibold">
       Super fast development
     </span>
