@@ -136,6 +136,11 @@
       img: '/images/components/sonner.webp'
     },
     {
+      title: 'Switch',
+      href: '/docs/common/switch',
+      img: '/images/components/switch.webp'
+    },
+    {
       title: 'Tooltip',
       href: '/docs/common/tooltip',
       img: '/images/components/tooltip.webp'
@@ -185,6 +190,11 @@
       title: 'Number Ticker',
       href: '/docs/trending/number-ticker',
       img: '/images/components/number-ticker.webp'
+    },
+    {
+      title: 'Origami',
+      href: '/docs/trending/origami',
+      img: '/images/components/origami.webp'
     }
   ]
 

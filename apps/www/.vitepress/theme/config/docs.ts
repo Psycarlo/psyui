@@ -38,6 +38,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Card', href: '/docs/common/card', label: 'New' },
         { title: 'Kbd', href: '/docs/common/kbd', label: 'New' },
         { title: 'Sonner', href: '/docs/common/sonner', label: 'New' },
+        { title: 'Switch', href: '/docs/common/switch', label: 'New' },
         {
           title: 'Tooltip',
           href: '/docs/common/tooltip',
@@ -91,6 +92,11 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Number Ticker',
           href: '/docs/trending/number-ticker',
+          label: 'New'
+        },
+        {
+          title: 'Origami',
+          href: '/docs/trending/origami',
           label: 'New'
         }
       ]
