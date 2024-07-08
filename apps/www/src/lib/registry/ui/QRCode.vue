@@ -1,15 +1,41 @@
 <template>
-  <span>todo</span>
+  <div ref="target" />
 </template>
 
 <script setup lang="ts">
-  import { tv } from 'tailwind-variants'
-  import { computed, type HTMLAttributes } from 'vue'
+  import { ref, onMounted } from 'vue'
+  import QRCodeStyling, { type Options } from 'qr-code-styling'
 
   type QRCodeProps = {
     value: string
-    class?: HTMLAttributes['class']
+    size?: number
+    options?: Partial<Options>
   }
 
-  const props = defineProps<QRCodeProps>()
+  const props = withDefaults(defineProps<QRCodeProps>(), {
+    size: 200
+  })
+
+  const target = ref<HTMLDivElement>()
+
+  onMounted(() => {
+    const qrCode = new QRCodeStyling({
+      width: props.size,
+      height: props.size,
+      type: 'svg',
+      data: props.value,
+      cornersSquareOptions: {
+        type: 'extra-rounded'
+      },
+      dotsOptions: {
+        type: 'extra-rounded'
+      },
+      qrOptions: {
+        errorCorrectionLevel: 'H'
+      },
+      ...props.options
+    })
+
+    qrCode.append(target.value)
+  })
 </script>

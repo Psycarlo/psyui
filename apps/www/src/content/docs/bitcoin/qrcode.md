@@ -1,6 +1,8 @@
 ---
 title: QRCode
 description: Data that can be easily read by cameras.
+primitive: https://github.com/kozakdenys/qr-code-styling
+inspiration: https://apps.apple.com/pt/app/strike-bitcoin/id1488724463
 ---
 
 <ComponentPreview name="QRCode" />
@@ -10,7 +12,7 @@ description: Data that can be easily read by cameras.
 ### Install dependencies
 
 ```bash
-npm install tailwind-variants
+npm install qr-code-styling
 ```
 
 ### Add component
