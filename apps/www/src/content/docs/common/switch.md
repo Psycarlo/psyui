@@ -12,7 +12,7 @@ description: A control for toggling between checked and unchecked.
 ### Install dependencies
 
 ```bash
-npm install tailwind-variants @headlessui/vue
+npm install tailwind-variants radix-vue
 ```
 
 ### Add component
