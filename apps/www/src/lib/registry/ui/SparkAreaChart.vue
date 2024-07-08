@@ -1,7 +1,6 @@
 <template>
   <VisXYContainer
     :class="containerClass"
-    :svgDefs="svgDefs"
     :scaleByDomain="true"
     :yDomain="[props.min || min, props.max || max]"
   >
@@ -17,6 +16,14 @@
       :y="(d: DataRecord) => d.y"
       color="url(#gradient)"
     />
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="gradient" gradientTransform="rotate(90)">
+          <stop offset="0%" stop-color="#04AA6D" stop-opacity="35%" />
+          <stop offset="100%" stop-color="#04AA6D" stop-opacity="0%" />
+        </linearGradient>
+      </defs>
+    </svg>
   </VisXYContainer>
 </template>
 
@@ -45,11 +52,4 @@
   const yValues = props.data.map((record) => record.y)
   const min = Math.min(...yValues)
   const max = Math.max(...yValues)
-
-  const svgDefs = `
-    <linearGradient id="gradient" gradientTransform="rotate(90)">
-      <stop offset="0%" stop-color="#04AA6D" stop-opacity="35%" />
-      <stop offset="100%" stop-color="#04AA6D" stop-opacity="0%" />
-    </linearGradient>
-  `
 </script>
