@@ -6,6 +6,8 @@ inspiration: https://www.tremor.so/docs/visualizations/tracker
 
 <ComponentPreview name="Tracker" />
 
+## Installation
+
 <Steps>
 
 ### Install dependencies

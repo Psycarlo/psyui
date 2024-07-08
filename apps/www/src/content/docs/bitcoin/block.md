@@ -6,6 +6,8 @@ inspiration: https://mempool.space/
 
 <ComponentPreview name="Block" />
 
+## Installation
+
 <Steps>
 
 ### Install dependencies

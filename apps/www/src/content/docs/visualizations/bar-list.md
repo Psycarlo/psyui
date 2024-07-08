@@ -6,6 +6,8 @@ inspiration: https://www.tremor.so/docs/visualizations/bar-list
 
 <ComponentPreview name="BarList" />
 
+## Installation
+
 <Steps>
 
 ### Install dependencies

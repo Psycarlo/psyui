@@ -5,6 +5,8 @@ description: Addresses, transaction ids and lightning invoices in a short format
 
 <ComponentPreview name="Shorten" />
 
+## Installation
+
 <Steps>
 
 ### Install dependencies

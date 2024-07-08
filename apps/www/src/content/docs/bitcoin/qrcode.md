@@ -7,6 +7,8 @@ inspiration: https://apps.apple.com/pt/app/strike-bitcoin/id1488724463
 
 <ComponentPreview name="QRCode" />
 
+## Installation
+
 <Steps>
 
 ### Install dependencies
