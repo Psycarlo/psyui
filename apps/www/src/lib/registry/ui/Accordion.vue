@@ -1,11 +1,5 @@
 <template>
-  <Disclosure></Disclosure>
+  <p>Accordion todo</p>
 </template>
 
-<script setup lang="ts">
-  import {
-    Disclosure,
-    DisclosureButton,
-    DisclosurePanel
-  } from '@headlessui/vue'
-</script>
+<script setup lang="ts"></script>

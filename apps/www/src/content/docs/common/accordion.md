@@ -12,7 +12,7 @@ description: Vertically stacked headings that reveal a section of additional con
 ### Install dependencies
 
 ```bash
-npm install @headlessui/vue
+npm install radix-vue
 ```
 
 ### Add component

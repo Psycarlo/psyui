@@ -1,12 +1,9 @@
 <template>
-  <TabGroup as="div" class="flex flex-col">
-    <TabList class="flex gap-4">
-      <Tab as="template" v-slot="{ selected }">
+  <TabsRoot as="div" class="flex flex-col" defaultValue="vite">
+    <TabsList class="flex w-full gap-4">
+      <TabsTrigger asChild value="vite">
         <Card
-          class="flex flex-col items-center justify-center gap-2 py-8 outline-none"
-          :class="{
-            'border-brand-primary bg-brand-primaryLight/10 border-2': selected
-          }"
+          class="data-[state=active]:border-brand-primary data-[state=active]:bg-brand-primaryLight/10 flex flex-col items-center justify-center gap-2 py-8 outline-none data-[state=active]:border-2"
         >
           <svg
             role="img"
@@ -22,13 +19,10 @@
           </svg>
           <span class="text-brand-primaryDark font-medium">Vite</span>
         </Card>
-      </Tab>
-      <Tab as="template" v-slot="{ selected }">
+      </TabsTrigger>
+      <TabsTrigger asChild value="nuxt">
         <Card
-          class="flex flex-col items-center justify-center gap-2 py-8 outline-none"
-          :class="{
-            'border-brand-primary bg-brand-primaryLight/10 border-2': selected
-          }"
+          class="data-[state=active]:border-brand-primary data-[state=active]:bg-brand-primaryLight/10 flex flex-col items-center justify-center gap-2 py-8 outline-none data-[state=active]:border-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,21 +38,19 @@
           </svg>
           <span class="text-brand-primaryDark font-medium">Nuxt</span>
         </Card>
-      </Tab>
-    </TabList>
-    <TabPanels>
-      <TabPanel>
-        <slot name="vite" />
-      </TabPanel>
-      <TabPanel>
-        <slot name="nuxt" />
-      </TabPanel>
-    </TabPanels>
-  </TabGroup>
+      </TabsTrigger>
+    </TabsList>
+    <TabsContent value="vite">
+      <slot name="vite" />
+    </TabsContent>
+    <TabsContent value="nuxt">
+      <slot name="nuxt" />
+    </TabsContent>
+  </TabsRoot>
 </template>
 
 <script setup lang="ts">
   // TODO: Replace with psyui Tabs component
-  import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+  import { TabsContent, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
   import Card from '@/lib/registry/ui/Card.vue'
 </script>
