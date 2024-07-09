@@ -239,6 +239,44 @@
       </div>
     </section>
   </div>
+  <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
+    <span class="text-brand-primary font-semibold"> Developers love it </span>
+    <h2 class="max-w-2xl text-3xl font-bold">
+      Vue community builds with PsyUI
+    </h2>
+    <div class="mt-10 grid grid-cols-3 gap-4">
+      <Card class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-slate-200"></div>
+          <div class="flex flex-col">
+            <span class="text-sm font-medium">You here</span>
+            <span class="text-xs text-slate-700">Your role @ Company</span>
+          </div>
+        </div>
+        <p class="mx-1 text-sm">Add your review of PsyUI.</p>
+      </Card>
+      <Card class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-slate-200"></div>
+          <div class="flex flex-col">
+            <span class="text-sm font-medium">You here</span>
+            <span class="text-xs text-slate-700">Your role @ Company</span>
+          </div>
+        </div>
+        <p class="text-sm">Add your review of PsyUI.</p>
+      </Card>
+      <Card class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-slate-200"></div>
+          <div class="flex flex-col">
+            <span class="text-sm font-medium">You here</span>
+            <span class="text-xs text-slate-700">Your role @ Company</span>
+          </div>
+        </div>
+        <p class="text-sm">Add your review of PsyUI.</p>
+      </Card>
+    </div>
+  </section>
   <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 pb-10 pt-20">
     <span class="text-brand-primary font-semibold">
       Super fast development
