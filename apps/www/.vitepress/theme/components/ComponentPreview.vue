@@ -50,8 +50,7 @@
       </TabsList>
       <TabsContent
         value="preview"
-        asChild
-        class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200"
+        class="hidden min-h-[350px] items-center justify-center rounded-md border border-slate-200 data-[state=active]:flex"
       >
         <ComponentLoader :name="`${props.name}Demo`" />
       </TabsContent>
