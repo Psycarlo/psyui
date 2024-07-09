@@ -2,7 +2,7 @@
   <ClientQRCode
     value="bitcoin:1111111111111111111114oLvT2"
     :options="{
-      image: '../../../assets/bitcoin.svg',
+      image: '/bitcoin.svg',
       imageOptions: { margin: 4 }
     }"
   />
