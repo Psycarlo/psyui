@@ -12,7 +12,7 @@ description: A popup to display information when it's focused or hovered.
 ### Install dependencies
 
 ```bash
-npm install tailwind-variants floating-vue
+npm install tailwind-variants radix-vue
 ```
 
 ### Add component
@@ -25,4 +25,4 @@ Copy and paste the code into your project's component directory.
 
 ## Additional props
 
-For more `Tooltip` props, check the `floating-vue` documentation [here](https://floating-vue.starpad.dev/api/).
+For more `Tooltip` props, check the `radix-vue` documentation [here](https://www.radix-vue.com/components/tooltip.html).

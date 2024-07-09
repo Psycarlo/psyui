@@ -20,7 +20,6 @@ Built using:
 - [Radix Vue](https://www.radix-vue.com/)
 - [Tailwind Variants](https://www.tailwind-variants.org/)
 - [Unovis](https://unovis.dev/)
-- [Floating Vue](https://floating-vue.starpad.dev/)
 
 PsyUI was inspired by:
 
