@@ -1,21 +1,17 @@
 <template>
   <div class="not-docs flex flex-col gap-6">
-    <TabGroup as="div" class="flex flex-col gap-2">
-      <TabList class="flex w-fit gap-2 rounded-md bg-slate-100 p-1" as="div">
-        <Tab as="template" v-slot="{ selected }">
+    <TabsRoot as="div" class="flex flex-col gap-2" defaultValue="preview">
+      <TabsList class="flex w-fit gap-2 rounded-md bg-slate-100 p-1" as="div">
+        <TabsTrigger asChild value="preview">
           <button
-            class="flex items-center gap-1 rounded-md p-2 focus:outline-none"
-            :class="{ 'bg-brand-white': selected }"
+            class="data-[state=active]:bg-brand-white [&>[data-state=active]>svg]:stroke-brand-primary group flex items-center gap-1 rounded-md p-2 focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              :class="[
-                'size-5',
-                selected ? 'stroke-brand-primary' : 'stroke-slate-900'
-              ]"
+              class="group-data-[state=active]:stroke-brand-primary size-5 group-data-[state=inactive]:stroke-slate-900"
             >
               <path
                 stroke-linecap="round"
@@ -30,21 +26,17 @@
             </svg>
             <span class="text-sm">Preview</span>
           </button>
-        </Tab>
-        <Tab as="template" v-slot="{ selected }">
+        </TabsTrigger>
+        <TabsTrigger asChild value="code">
           <button
-            class="focus:ring-brand-primary flex items-center gap-1 rounded-md px-2 py-1 focus:outline-none"
-            :class="{ 'bg-brand-white': selected }"
+            class="data-[state=active]:bg-brand-white focus:ring-brand-primary group flex items-center gap-1 rounded-md px-2 py-1 focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              :class="[
-                'size-5',
-                selected ? 'stroke-brand-primary' : 'stroke-slate-900'
-              ]"
+              class="group-data-[state=active]:stroke-brand-primary size-5 group-data-[state=inactive]:stroke-slate-900"
             >
               <path
                 stroke-linecap="round"
@@ -54,25 +46,25 @@
             </svg>
             <span class="text-sm">Code</span>
           </button>
-        </Tab>
-      </TabList>
-      <TabPanels>
-        <TabPanel
-          class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200"
-        >
-          <ComponentLoader :name="`${props.name}Demo`" />
-        </TabPanel>
-        <TabPanel class="vp-doc -mt-4">
-          <ComponentCode :name="`${props.name}Demo`" />
-        </TabPanel>
-      </TabPanels>
-    </TabGroup>
+        </TabsTrigger>
+      </TabsList>
+      <TabsContent
+        value="preview"
+        asChild
+        class="flex min-h-[350px] items-center justify-center rounded-md border border-slate-200"
+      >
+        <ComponentLoader :name="`${props.name}Demo`" />
+      </TabsContent>
+      <TabsContent value="code" class="vp-doc -mt-4">
+        <ComponentCode :name="`${props.name}Demo`" />
+      </TabsContent>
+    </TabsRoot>
   </div>
 </template>
 
 <script setup lang="ts">
   // TODO: Replace with psyui Tabs component
-  import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+  import { TabsContent, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
   import ComponentLoader from './ComponentLoader.vue'
   import ComponentCode from './ComponentCode.vue'
 

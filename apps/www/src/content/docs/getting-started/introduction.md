@@ -16,7 +16,6 @@ We don't expect every component to fit your design perfectly, so feel free to ed
 Built using:
 
 - [Tailwind CSS](https://tailwindcss.com/)
-- [HeadlessUI](https://headlessui.com/v1/vue)
 - [Radix Vue](https://www.radix-vue.com/)
 - [Tailwind Variants](https://www.tailwind-variants.org/)
 - [Unovis](https://unovis.dev/)
