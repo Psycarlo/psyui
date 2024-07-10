@@ -239,6 +239,11 @@
       </div>
     </section>
   </div>
+  <!-- <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
+    <span class="text-brand-primary font-semibold">Blocks & Templates</span>
+    <h2 class="max-w-2xl text-3xl font-bold">Launch your ideas tomorrow</h2>
+    <p class="xs:text-base text-sm text-slate-700">todo text</p>
+  </section> -->
   <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
     <span class="text-brand-primary font-semibold"> Developers love it </span>
     <h2 class="max-w-2xl text-3xl font-bold">
@@ -325,6 +330,33 @@
       </Card>
     </div>
   </section>
+  <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
+    <span class="text-brand-primary font-semibold">Thank you so much</span>
+    <h2 class="max-w-2xl text-3xl font-bold">Sponsor this project</h2>
+    <div class="mt-10 flex gap-6">
+      <Card class="flex w-fit flex-col items-center p-1 pb-4">
+        <QRCode
+          value="bitcoin:bc1qzsdges0lm34jkjfydgltr6jqnuxcjrj7rapuyy"
+          :options="{
+            image: '/bitcoin.svg',
+            imageOptions: { margin: 4 }
+          }"
+        />
+        <p class="font-medium">Bitcoin</p>
+      </Card>
+      <Card class="flex w-fit flex-col items-center gap-2 p-4 pb-4">
+        <QRCode
+          :size="180"
+          value="psycarlo@walletofsatoshi.com"
+          :options="{
+            image: '/lightning.svg',
+            imageOptions: { margin: 4 }
+          }"
+        />
+        <p class="font-medium">Lightning</p>
+      </Card>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -339,6 +371,7 @@
   import Button from '@/lib/registry/ui/Button.vue'
   import AnimatedChevron from '@/lib/registry/ui/AnimatedChevron.vue'
   import Badge from '@/lib/registry/ui/Badge.vue'
+  import QRCode from '@/lib/registry/ui/QRCode.vue'
   import {
     Square3Stack3DIcon,
     FolderOpenIcon,

@@ -1,5 +1,5 @@
 <template>
-  <Accordion />
+  <Accordion></Accordion>
 </template>
 
 <script setup lang="ts">

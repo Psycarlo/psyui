@@ -18,11 +18,11 @@
 
   const target = ref<HTMLDivElement>()
 
-  onMounted(() => {
+  onMounted(async () => {
     const qrCode = new QRCodeStyling({
       width: props.size,
       height: props.size,
-      type: 'svg',
+      type: 'canvas',
       data: props.value,
       cornersSquareOptions: {
         type: 'extra-rounded'
