@@ -335,7 +335,7 @@
     <h2 class="max-w-2xl text-3xl font-bold">Sponsor this project</h2>
     <div class="mt-10 flex gap-6">
       <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
-        <QRCode
+        <ClientQRCode
           value="bitcoin:bc1qzsdges0lm34jkjfydgltr6jqnuxcjrj7rapuyy"
           :options="{
             image: '/bitcoin.svg',
@@ -345,7 +345,7 @@
         <p class="font-medium">Bitcoin</p>
       </Card>
       <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
-        <QRCode
+        <ClientQRCode
           value="psycarlo@walletofsatoshi.com"
           :margin="10"
           :options="{
@@ -356,7 +356,7 @@
         <p class="font-medium">Lightning</p>
       </Card>
       <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
-        <QRCode
+        <ClientQRCode
           value="https://github.com/sponsors/Psycarlo"
           :options="{
             image: '/github.svg',
@@ -381,7 +381,7 @@
   import Button from '@/lib/registry/ui/Button.vue'
   import AnimatedChevron from '@/lib/registry/ui/AnimatedChevron.vue'
   import Badge from '@/lib/registry/ui/Badge.vue'
-  import QRCode from '@/lib/registry/ui/QRCode.vue'
+  import { defineClientComponent } from 'vitepress'
   import {
     Square3Stack3DIcon,
     FolderOpenIcon,
@@ -391,6 +391,10 @@
     PencilIcon,
     SparklesIcon
   } from '@heroicons/vue/24/solid'
+
+  const ClientQRCode = defineClientComponent(() => {
+    return import('@/lib/registry/ui/QRCode.vue')
+  })
 
   const trackerData = [
     { variant: 'primary' as const, tooltip: 'Online' },
