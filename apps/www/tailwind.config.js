@@ -67,8 +67,8 @@ export default {
       },
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
-        accordionDown: 'accordionDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-        accordionUp: 'accordionUp 300ms cubic-bezier(0.87, 0, 0.13, 1)'
+        accordionDown: 'accordionDown 150ms cubic-bezier(0.87, 0, 0.13, 1)',
+        accordionUp: 'accordionUp 150ms cubic-bezier(0.87, 0, 0.13, 1)'
       },
       keyframes: {
         marquee: {
@@ -76,12 +76,12 @@ export default {
           to: { transform: 'translateX(calc(-100% - var(--gap)))' }
         },
         accordionDown: {
-          from: { height: 0 },
+          from: { height: '0px' },
           to: { height: 'var(--radix-collapsible-content-height)' }
         },
         accordionUp: {
           from: { height: 'var(--radix-collapsible-content-height)' },
-          to: { height: 0 }
+          to: { height: '0px' }
         }
       }
     }

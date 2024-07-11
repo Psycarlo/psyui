@@ -17,7 +17,7 @@
         </AccordionTrigger>
       </AccordionHeader>
       <AccordionContent
-        class="data-[state=open]:animate-accordionDown data-[state=closed]:animate-accordionUp overflow-hidden px-4 pb-3"
+        class="data-[state=open]:animate-accordionDown data-[state=closed]:animate-accordionUp transform-gpu overflow-hidden px-4 pb-3"
       >
         <slot :name="`content${index + 1}`" />
       </AccordionContent>
