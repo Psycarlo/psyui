@@ -11,6 +11,8 @@ Welcome to the **psyui** documentation!
 
 PsyUI is a copy and paste component library for Vue that helps you build beautiful and accessible user interfaces.
 
+In PsyUI, each component has only one file. For example, instead of `AccordionContent`, `AccordionHeader`, `AccordionItem`, `AccordionRoot`, `AccordionTrigger` (multiple files), we just have `Accordion`.
+
 We don't expect every component to fit your design perfectly, so feel free to edit the components code.
 
 Built using:

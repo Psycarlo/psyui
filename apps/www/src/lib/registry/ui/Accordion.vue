@@ -1,9 +1,15 @@
 <template>
   <AccordionRoot type="single" collapsible :class="accordionClass">
-    <AccordionItem value="item1">
+    <AccordionItem
+      v-for="(_, index) in Object.keys($slots).length / 2"
+      :value="`item${index + 1}`"
+      class="overflow-hidden border-b first:rounded-t last:rounded-b last:border-b-0"
+    >
       <AccordionHeader>
-        <AccordionTrigger class="group flex items-center">
-          Trigger
+        <AccordionTrigger
+          class="group flex w-full items-center justify-between px-4 py-3 outline-none"
+        >
+          <slot :name="`trigger${index + 1}`" />
           <ChevronDownIcon
             v-if="icon"
             class="size-4 transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180"
@@ -11,15 +17,10 @@
         </AccordionTrigger>
       </AccordionHeader>
       <AccordionContent
-        class="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp"
-        >Content</AccordionContent
+        class="data-[state=open]:animate-accordionDown data-[state=closed]:animate-accordionUp overflow-hidden px-4 pb-3"
       >
-    </AccordionItem>
-    <AccordionItem value="item2">
-      <AccordionHeader>
-        <AccordionTrigger>Trigger 2</AccordionTrigger>
-      </AccordionHeader>
-      <AccordionContent>Content 2</AccordionContent>
+        <slot :name="`content${index + 1}`" />
+      </AccordionContent>
     </AccordionItem>
   </AccordionRoot>
 </template>
@@ -45,5 +46,7 @@
     icon: true
   })
 
-  const accordionClass = computed(() => tv({ base: '' })(props))
+  const accordionClass = computed(() =>
+    tv({ base: 'w-full rounded-md border' })(props)
+  )
 </script>
