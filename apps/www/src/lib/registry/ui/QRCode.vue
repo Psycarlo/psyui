@@ -9,11 +9,13 @@
   type QRCodeProps = {
     value: string
     size?: number
+    margin?: number
     options?: Partial<Options>
   }
 
   const props = withDefaults(defineProps<QRCodeProps>(), {
-    size: 200
+    size: 200,
+    margin: 0
   })
 
   const target = ref<HTMLDivElement>()
@@ -22,6 +24,7 @@
     const qrCode = new QRCodeStyling({
       width: props.size,
       height: props.size,
+      margin: props.margin,
       type: 'canvas',
       data: props.value,
       cornersSquareOptions: {

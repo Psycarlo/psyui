@@ -334,7 +334,7 @@
     <span class="text-brand-primary font-semibold">Thank you so much</span>
     <h2 class="max-w-2xl text-3xl font-bold">Sponsor this project</h2>
     <div class="mt-10 flex gap-6">
-      <Card class="flex w-fit flex-col items-center p-1 pb-4">
+      <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
         <QRCode
           value="bitcoin:bc1qzsdges0lm34jkjfydgltr6jqnuxcjrj7rapuyy"
           :options="{
@@ -344,16 +344,26 @@
         />
         <p class="font-medium">Bitcoin</p>
       </Card>
-      <Card class="flex w-fit flex-col items-center gap-2 p-4 pb-4">
+      <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
         <QRCode
-          :size="180"
           value="psycarlo@walletofsatoshi.com"
+          :margin="10"
           :options="{
             image: '/lightning.svg',
             imageOptions: { margin: 4 }
           }"
         />
         <p class="font-medium">Lightning</p>
+      </Card>
+      <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
+        <QRCode
+          value="https://github.com/sponsors/Psycarlo"
+          :options="{
+            image: '/github.svg',
+            imageOptions: { margin: 4 }
+          }"
+        />
+        <p class="font-medium">GitHub Sponsors</p>
       </Card>
     </div>
   </section>
