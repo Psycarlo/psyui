@@ -338,7 +338,7 @@
         <ClientQRCode
           value="bitcoin:bc1qzsdges0lm34jkjfydgltr6jqnuxcjrj7rapuyy"
           :options="{
-            image: '/bitcoin.svg',
+            image: '/bitcoin-orange.svg',
             imageOptions: { margin: 4 }
           }"
         />

@@ -9,6 +9,7 @@
   type QRCodeProps = {
     value: string
     size?: number
+    color?: string
     margin?: number
     options?: Partial<Options>
   }
@@ -28,10 +29,15 @@
       type: 'canvas',
       data: props.value,
       cornersSquareOptions: {
-        type: 'extra-rounded'
+        type: 'extra-rounded',
+        color: props.color
+      },
+      cornersDotOptions: {
+        color: props.color
       },
       dotsOptions: {
-        type: 'extra-rounded'
+        type: 'extra-rounded',
+        color: props.color
       },
       qrOptions: {
         errorCorrectionLevel: 'H'
