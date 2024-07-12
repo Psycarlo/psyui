@@ -30,15 +30,15 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Common',
       items: [
-        { title: 'Accordion', href: '/docs/common/accordion', label: 'New' },
-        { title: 'Avatar', href: '/docs/common/avatar', label: 'New' },
-        { title: 'Badge', href: '/docs/common/badge', label: 'New' },
-        { title: 'Button', href: '/docs/common/button', label: 'New' },
-        { title: 'Callout', href: '/docs/common/callout', label: 'New' },
-        { title: 'Card', href: '/docs/common/card', label: 'New' },
-        { title: 'Kbd', href: '/docs/common/kbd', label: 'New' },
-        { title: 'Sonner', href: '/docs/common/sonner', label: 'New' },
-        { title: 'Switch', href: '/docs/common/switch', label: 'New' },
+        { title: 'Accordion', href: '/docs/common/accordion' },
+        { title: 'Avatar', href: '/docs/common/avatar' },
+        { title: 'Badge', href: '/docs/common/badge' },
+        { title: 'Button', href: '/docs/common/button' },
+        { title: 'Callout', href: '/docs/common/callout' },
+        { title: 'Card', href: '/docs/common/card' },
+        { title: 'Kbd', href: '/docs/common/kbd' },
+        { title: 'Sonner', href: '/docs/common/sonner' },
+        { title: 'Switch', href: '/docs/common/switch' },
         {
           title: 'Tooltip',
           href: '/docs/common/tooltip',
@@ -51,33 +51,32 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: 'Bar List',
-          href: '/docs/visualizations/bar-list',
-          label: 'New'
+          href: '/docs/visualizations/bar-list'
         },
         {
           title: 'Progress Bar',
-          href: '/docs/common/progress-bar',
-          label: 'New'
+          href: '/docs/common/progress-bar'
         },
         {
           title: 'Progress Circle',
-          href: '/docs/common/progress-circle',
-          label: 'New'
+          href: '/docs/common/progress-circle'
         },
         {
           title: 'Spark Area Chart',
-          href: '/docs/visualizations/spark-area-chart',
+          href: '/docs/visualizations/spark-area-chart'
+        },
+        {
+          title: 'Spark Bar Chart',
+          href: '/docs/visualizations/spark-bar-chart',
           label: 'New'
         },
         {
           title: 'Spark Line Chart',
-          href: '/docs/visualizations/spark-line-chart',
-          label: 'New'
+          href: '/docs/visualizations/spark-line-chart'
         },
         {
           title: 'Tracker',
-          href: '/docs/visualizations/tracker',
-          label: 'New'
+          href: '/docs/visualizations/tracker'
         }
       ]
     },
@@ -86,27 +85,25 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: 'Marquee',
-          href: '/docs/trending/marquee',
-          label: 'New'
+          href: '/docs/trending/marquee'
         },
         {
           title: 'Number Ticker',
-          href: '/docs/trending/number-ticker',
-          label: 'New'
+          href: '/docs/trending/number-ticker'
         },
         {
           title: 'Origami',
           href: '/docs/trending/origami',
-          label: 'New'
+          label: 'Soon'
         }
       ]
     },
     {
       title: 'Bitcoin',
       items: [
-        { title: 'Block', href: '/docs/bitcoin/block', label: 'New' },
-        { title: 'QRCode', href: '/docs/bitcoin/qrcode', label: 'New' },
-        { title: 'Shorten', href: '/docs/bitcoin/shorten', label: 'New' }
+        { title: 'Block', href: '/docs/bitcoin/block' },
+        { title: 'QRCode', href: '/docs/bitcoin/qrcode' },
+        { title: 'Shorten', href: '/docs/bitcoin/shorten' }
       ]
     },
     {
@@ -114,8 +111,12 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: 'Animated Chevron',
-          href: '/docs/others/animated-chevron',
-          label: 'New'
+          href: '/docs/others/animated-chevron'
+        },
+        {
+          title: 'Animated Copy',
+          href: '/docs/others/animated-copy',
+          label: 'Soon'
         }
       ]
     }

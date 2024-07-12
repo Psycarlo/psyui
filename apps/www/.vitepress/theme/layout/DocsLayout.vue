@@ -20,10 +20,11 @@
           >
             <a
               v-if="doc.href"
-              :href="doc.href"
+              :href="doc.label !== 'Soon' ? doc.href : undefined"
               class="inline-flex items-center gap-3"
               :class="{
-                'text-brand-primary': route.path === `${doc.href}`
+                'text-brand-primary': route.path === `${doc.href}`,
+                'opacity-35': doc.label === 'Soon'
               }"
             >
               {{ doc.title }}

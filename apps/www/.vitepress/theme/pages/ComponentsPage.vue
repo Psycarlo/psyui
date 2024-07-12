@@ -18,6 +18,7 @@
             :title="commonComponent.title"
             :href="commonComponent.href"
             :img="commonComponent.img"
+            :soon="commonComponent.soon"
           />
         </li>
       </ul>
@@ -33,6 +34,7 @@
             :title="visualizationComponent.title"
             :href="visualizationComponent.href"
             :img="visualizationComponent.img"
+            :soon="visualizationComponent.soon"
           />
         </li>
       </ul>
@@ -48,6 +50,7 @@
             :title="trendingComponent.title"
             :href="trendingComponent.href"
             :img="trendingComponent.img"
+            :soon="trendingComponent.soon"
           />
         </li>
       </ul>
@@ -63,6 +66,7 @@
             :title="bitcoinComponent.title"
             :href="bitcoinComponent.href"
             :img="bitcoinComponent.img"
+            :soon="bitcoinComponent.soon"
           />
         </li>
       </ul>
@@ -78,6 +82,7 @@
             :title="otherComponent.title"
             :href="otherComponent.href"
             :img="otherComponent.img"
+            :soon="otherComponent.soon"
           />
         </li>
       </ul>
@@ -92,6 +97,7 @@
     title: string
     href: string
     img: string
+    soon?: boolean
   }
 
   const commonComponents: ComponentCardProps[] = [
@@ -169,6 +175,11 @@
       img: '/images/components/spark-area-chart.webp'
     },
     {
+      title: 'Spark Bar Chart',
+      href: '/docs/visualizations/spark-bar-chart',
+      img: '/images/components/spark-bar-chart.webp'
+    },
+    {
       title: 'Spark Line Chart',
       href: '/docs/visualizations/spark-line-chart',
       img: '/images/components/spark-line-chart.webp'
@@ -194,7 +205,8 @@
     {
       title: 'Origami',
       href: '/docs/trending/origami',
-      img: '/images/components/origami.webp'
+      img: '/images/components/origami.webp',
+      soon: true
     }
   ]
 
@@ -221,6 +233,12 @@
       title: 'Animated Chevron Icon',
       href: '/docs/others/animated-chevron',
       img: '/images/components/animated-chevron.webp'
+    },
+    {
+      title: 'Animated Copy Icon',
+      href: '/docs/others/animated-copy',
+      img: '/images/components/animated-copy.webp',
+      soon: true
     }
   ]
 </script>

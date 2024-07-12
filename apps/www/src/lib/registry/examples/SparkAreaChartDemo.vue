@@ -12,6 +12,7 @@
         { x: 5, y: 2390 },
         { x: 6, y: 3490 }
       ]"
+      :min="1500"
     />
     <p class="text-brand-gray-black font-medium">$69,420.69</p>
   </Card>
