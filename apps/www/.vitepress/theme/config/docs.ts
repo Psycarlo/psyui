@@ -36,6 +36,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Button', href: '/docs/common/button' },
         { title: 'Callout', href: '/docs/common/callout' },
         { title: 'Card', href: '/docs/common/card' },
+        { title: 'Checkbox', href: '/docs/common/checkbox' },
         { title: 'Kbd', href: '/docs/common/kbd' },
         { title: 'Sonner', href: '/docs/common/sonner' },
         { title: 'Switch', href: '/docs/common/switch' },

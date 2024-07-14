@@ -132,6 +132,11 @@
       img: '/images/components/card.webp'
     },
     {
+      title: 'Checkbox',
+      href: '/docs/common/checkbox',
+      img: '/images/components/checkbox.webp'
+    },
+    {
       title: 'Kbd',
       href: '/docs/common/kbd',
       img: '/images/components/kbd.webp'
