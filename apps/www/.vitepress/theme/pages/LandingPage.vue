@@ -7,6 +7,13 @@
     >
       Website inspired by <b>tremor.so</b>
     </a>
+    <a
+      class="absolute right-[8%] top-16 hidden rotate-12 rounded-full border border-slate-200/50 bg-slate-50 px-1.5 py-0.5 text-[10px] text-slate-400 hover:underline md:inline-block lg:right-[18%] xl:right-[24%]"
+      :href="siteConfig.links.figma"
+      target="_blank"
+    >
+      We are on <b>figma</b>
+    </a>
     <main class="mx-auto flex max-w-screen-xl items-center px-4 pt-20">
       <div
         class="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6"
@@ -237,6 +244,14 @@
           </p>
         </Card>
       </div>
+      <a
+        :href="siteConfig.links.figma"
+        target="_blank"
+        class="inline-flex items-center justify-center gap-0.5 text-slate-600 hover:text-slate-800"
+      >
+        <span>psyui on</span>
+        <Icon icon="solar:figma-bold" class="size-5" />
+      </a>
     </section>
   </div>
   <!-- <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
@@ -391,6 +406,7 @@
     PencilIcon,
     SparklesIcon
   } from '@heroicons/vue/24/solid'
+  import { Icon } from '@iconify/vue'
 
   const ClientQRCode = defineClientComponent(() => {
     return import('@/lib/registry/ui/QRCode.vue')

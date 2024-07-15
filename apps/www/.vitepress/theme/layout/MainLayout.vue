@@ -226,6 +226,13 @@
             >
               Github
             </a>
+            <a
+              :href="siteConfig.links.figma"
+              target="_blank"
+              class="text-sm text-slate-600 hover:text-slate-900"
+            >
+              Figma
+            </a>
             <a href="#top" class="text-sm text-slate-600 hover:text-slate-900">
               Go to top
             </a>
@@ -234,19 +241,21 @@
         <hr class="my-12" />
         <div class="flex items-center justify-between">
           <p class="text-sm text-slate-600">© 2024 psyui</p>
-          <ul class="flex items-center gap-2">
+          <ul class="flex items-center gap-3">
             <li>
               <a :href="siteConfig.links.github" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 19.516"
-                  class="h-5 w-5 fill-slate-600 hover:fill-slate-700"
-                >
-                  <path
-                    d="M12,2A10.007,10.007,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31c-2.77.6-3.36-1.34-3.36-1.34A2.69,2.69,0,0,0,5.03,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1.03,2.148,2.148,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92A3.873,3.873,0,0,1,6.65,8.79a3.577,3.577,0,0,1,.1-2.64s.84-.27,2.75,1.02a9.635,9.635,0,0,1,5,0c1.91-1.29,2.75-1.02,2.75-1.02a3.577,3.577,0,0,1,.1,2.64,3.873,3.873,0,0,1,1.03,2.71c0,3.82-2.34,4.66-4.57,4.91a2.386,2.386,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10.009,10.009,0,0,0,12,2"
-                    transform="translate(-2 -2)"
-                  />
-                </svg>
+                <Icon
+                  icon="mdi:github"
+                  class="size-6 text-slate-600 hover:text-slate-700"
+                />
+              </a>
+            </li>
+            <li>
+              <a :href="siteConfig.links.figma" target="_blank">
+                <Icon
+                  icon="solar:figma-bold"
+                  class="size-6 text-slate-600 hover:text-slate-700"
+                />
               </a>
             </li>
           </ul>
@@ -264,6 +273,7 @@
   import Logo from '../components/Logo.vue'
   import { ref, onMounted } from 'vue'
   import Sonner from '@/lib/registry/ui/Sonner.vue'
+  import { Icon } from '@iconify/vue'
 
   const $route = useRoute()
 
