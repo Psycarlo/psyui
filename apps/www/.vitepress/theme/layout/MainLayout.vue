@@ -159,6 +159,13 @@
             >
               hover.dev
             </a>
+            <a
+              href="https://primevue.org/"
+              target="_blank"
+              class="text-sm text-slate-600 hover:text-slate-900"
+            >
+              prime vue
+            </a>
           </div>
           <div class="flex flex-col gap-3">
             <h3 class="mb-2 text-sm font-medium">Support</h3>
