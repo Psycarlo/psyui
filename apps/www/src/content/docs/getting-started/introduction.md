@@ -30,6 +30,7 @@ PsyUI was inspired by:
 - [NextUI](https://nextui.org/)
 - [AceternityUI](https://ui.aceternity.com/)
 - [Hover.dev](https://www.hover.dev/)
+- [Prime Vue](https://primevue.org/)
 
 Check our Figma [here](https://www.figma.com/design/XrZ71yuBzEwJG7Or5xlcd8/PsyUI?node-id=0-1&t=9qGoQznpsfNmG7kj-1).
 
