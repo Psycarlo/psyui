@@ -2,6 +2,7 @@
 title: Table
 description: Display data efficiently in a column and row format.
 primitive: https://www.radix-vue.com/components/tabs.html
+inspiration: https://www.tremor.so/docs/ui/tabs
 ---
 
 <ComponentPreview name="Tabs" />

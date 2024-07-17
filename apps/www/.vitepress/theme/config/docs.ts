@@ -104,6 +104,11 @@ export const docsConfig: DocsConfig = {
           title: 'Origami',
           href: '/docs/trending/origami',
           label: 'Soon'
+        },
+        {
+          title: 'Word Pullup',
+          href: '/docs/trending/word-pullup',
+          label: 'New'
         }
       ]
     },

@@ -234,6 +234,11 @@
       href: '/docs/trending/origami',
       img: '/images/components/origami.webp',
       soon: true
+    },
+    {
+      title: 'Word Pullup',
+      href: '/docs/trending/word-pullup',
+      img: '/images/components/word-pullup.webp'
     }
   ]
 
