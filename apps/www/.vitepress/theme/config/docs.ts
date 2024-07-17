@@ -41,6 +41,8 @@ export const docsConfig: DocsConfig = {
         { title: 'Select', href: '/docs/common/select' },
         { title: 'Sonner', href: '/docs/common/sonner' },
         { title: 'Switch', href: '/docs/common/switch' },
+        { title: 'Table', href: '/docs/common/table', label: 'Soon' },
+        { title: 'Tabs', href: '/docs/common/tabs', label: 'Soon' },
         {
           title: 'Tooltip',
           href: '/docs/common/tooltip',

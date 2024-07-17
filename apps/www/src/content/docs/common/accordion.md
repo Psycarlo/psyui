@@ -72,10 +72,10 @@ Inside the `template` tag, you can put whatever you want.
 
 Make sure you create the same number of `trigger` and `content` slots.
 
-To define a open item by default, use the `default-value` prop with `item{number}` as the value:
+To define a open item by default, use the `defaultValue` prop with `item{number}` as the value:
 
 ```vue
-<Accordion default-value="item1">
+<Accordion defaultValue="item1">
   ...
 </Accordion>
 ```

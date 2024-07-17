@@ -1,5 +1,5 @@
 <template>
-  <Accordion class="max-w-md">
+  <Accordion class="max-w-md" defaultValue="item1">
     <template #trigger1>
       <span class="inline-flex items-center gap-2 text-sm font-medium">
         <Icon icon="mdi:bitcoin" class="size-5" />

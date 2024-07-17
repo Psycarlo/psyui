@@ -157,6 +157,18 @@
       img: '/images/components/switch.webp'
     },
     {
+      title: 'Table',
+      href: '/docs/common/table',
+      img: '/images/components/table.webp',
+      soon: true
+    },
+    {
+      title: 'Tabs',
+      href: '/docs/common/tabs',
+      img: '/images/components/tabs.webp',
+      soon: true
+    },
+    {
       title: 'Tooltip',
       href: '/docs/common/tooltip',
       img: '/images/components/tooltip.webp'
