@@ -142,6 +142,11 @@
       img: '/images/components/kbd.webp'
     },
     {
+      title: 'Select',
+      href: '/docs/common/select',
+      img: '/images/components/select.webp'
+    },
+    {
       title: 'Sonner',
       href: '/docs/common/sonner',
       img: '/images/components/sonner.webp'
