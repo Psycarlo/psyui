@@ -13,7 +13,7 @@ inspiration: https://magicui.design/docs/components/number-ticker
 ### Install dependencies
 
 ```bash
-npm install animejs tailwind-variants
+npm install animejs tailwind-variants @vueuse/core
 ```
 
 ### Install dev dependencies

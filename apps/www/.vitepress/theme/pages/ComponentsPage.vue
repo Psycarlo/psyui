@@ -203,6 +203,11 @@
 
   const trendingComponents: ComponentCardProps[] = [
     {
+      title: 'Letter Pullup',
+      href: '/docs/trending/letter-pullup',
+      img: '/images/components/letter-pullup.webp'
+    },
+    {
       title: 'Marquee',
       href: '/docs/trending/marquee',
       img: '/images/components/marquee.webp'

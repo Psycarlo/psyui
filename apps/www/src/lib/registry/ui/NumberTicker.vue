@@ -57,7 +57,7 @@
   }
 
   watch(targetIsVisible, (visible) => {
-    if (visible) {
+    if (!wasTriggered.value && visible) {
       wasTriggered.value = true
       animate()
     }

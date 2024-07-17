@@ -13,7 +13,7 @@ inspiration: https://www.hover.dev/components/other
 ### Install dependencies
 
 ```bash
-npm install
+npm install tailwind-variants @vueuse/motion
 ```
 
 ### Add component

@@ -86,6 +86,11 @@ export const docsConfig: DocsConfig = {
       title: 'Trending',
       items: [
         {
+          title: 'Letter Pullup',
+          href: '/docs/trending/letter-pullup',
+          label: 'New'
+        },
+        {
           title: 'Marquee',
           href: '/docs/trending/marquee'
         },
