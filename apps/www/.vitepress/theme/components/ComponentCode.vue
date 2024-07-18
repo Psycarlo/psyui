@@ -42,6 +42,10 @@
   function transformImportPath(code: string) {
     const s = new MagicString(code)
     s.replaceAll(`../ui/`, '@/components/')
+    s.replaceAll(
+      `import tailwindConfig from '../../../../tailwind.config.js'`,
+      `import tailwindConfig from '../../tailwind.config.js' // Path to your tailwind.config.js file`
+    )
     return s.toString()
   }
 

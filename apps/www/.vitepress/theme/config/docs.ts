@@ -88,6 +88,11 @@ export const docsConfig: DocsConfig = {
       title: 'Trending',
       items: [
         {
+          title: 'Border Beam',
+          href: '/docs/trending/border-beam',
+          label: 'New'
+        },
+        {
           title: 'Letter Pullup',
           href: '/docs/trending/letter-pullup',
           label: 'New'

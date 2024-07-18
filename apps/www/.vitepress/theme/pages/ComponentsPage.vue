@@ -215,6 +215,11 @@
 
   const trendingComponents: ComponentCardProps[] = [
     {
+      title: 'Border Beam',
+      href: '/docs/trending/border-beam',
+      img: '/images/components/border-beam.webp'
+    },
+    {
       title: 'Letter Pullup',
       href: '/docs/trending/letter-pullup',
       img: '/images/components/letter-pullup.webp'

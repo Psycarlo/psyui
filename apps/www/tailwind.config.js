@@ -68,6 +68,7 @@ export default {
       animation: {
         accordionDown: 'accordionDown 150ms cubic-bezier(0.87, 0, 0.13, 1)',
         accordionUp: 'accordionUp 150ms cubic-bezier(0.87, 0, 0.13, 1)',
+        borderBeam: 'borderBeam calc(var(--duration)*1s) infinite linear',
         marquee: 'marquee var(--duration) linear infinite',
         selectHide: 'selectHide 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         selectDown: 'selectDown 150ms cubic-bezier(0.16, 1, 0.3, 1)',
@@ -83,6 +84,11 @@ export default {
         accordionUp: {
           from: { height: 'var(--radix-collapsible-content-height)' },
           to: { height: '0px' }
+        },
+        borderBeam: {
+          '100%': {
+            'offset-distance': '100%'
+          }
         },
         marquee: {
           from: { transform: 'translateX(0)' },
