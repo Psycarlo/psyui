@@ -12,25 +12,7 @@
       <span class="font-medium">{{ announcementConfig.title }}</span>
       <div class="bg-brand-white mt-[2px] h-[2px] w-[2px] rounded-full"></div>
       <span>{{ announcementConfig.description }}</span>
-      <!-- TODO: Arrow Icon Component? -->
-      <svg
-        class="stroke-brand-white -mr-1 ml-2 stroke-[1.5px]"
-        fill="none"
-        stroke="currentColor"
-        width="11"
-        height="11"
-        viewBox="0 0 10 10"
-        aria-hidden="true"
-      >
-        <path
-          class="opacity-0 transition group-hover:opacity-100"
-          d="M0 5h7"
-        ></path>
-        <path
-          class="transition group-hover:translate-x-[3px]"
-          d="M1 1l4 4-4 4"
-        ></path>
-      </svg>
+      <AnimatedChevron />
     </a>
     <button
       class="flex items-center justify-center"
@@ -53,6 +35,7 @@
 <script setup lang="ts">
   import { announcementConfig } from '../config/site'
   import { ref } from 'vue'
+  import AnimatedChevron from '@/lib/registry/ui/AnimatedChevron.vue'
 
   const showAnnouncement = ref(true)
 </script>
