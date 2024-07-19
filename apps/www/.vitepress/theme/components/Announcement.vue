@@ -17,6 +17,7 @@
     <button
       class="flex items-center justify-center"
       @click="showAnnouncement = false"
+      title="Close Announcement"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

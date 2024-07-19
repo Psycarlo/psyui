@@ -250,7 +250,11 @@
           <p class="text-sm text-slate-600">© 2024 psyui</p>
           <ul class="flex items-center gap-3">
             <li>
-              <a :href="siteConfig.links.github" target="_blank">
+              <a
+                :href="siteConfig.links.github"
+                target="_blank"
+                aria-label="Github"
+              >
                 <Icon
                   icon="mdi:github"
                   class="size-6 text-slate-600 hover:text-slate-700"
@@ -258,7 +262,11 @@
               </a>
             </li>
             <li>
-              <a :href="siteConfig.links.figma" target="_blank">
+              <a
+                :href="siteConfig.links.figma"
+                target="_blank"
+                aria-label="Figma"
+              >
                 <Icon
                   icon="solar:figma-bold"
                   class="size-6 text-slate-600 hover:text-slate-700"
