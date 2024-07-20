@@ -137,6 +137,11 @@
       img: '/images/components/checkbox.webp'
     },
     {
+      title: 'Draggable',
+      href: '/docs/common/draggable',
+      img: '/images/components/draggable.webp'
+    },
+    {
       title: 'Kbd',
       href: '/docs/common/kbd',
       img: '/images/components/kbd.webp'

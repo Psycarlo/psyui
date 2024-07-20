@@ -35,6 +35,12 @@ importers:
 
   apps/www:
     dependencies:
+      '@atlaskit/pragmatic-drag-and-drop':
+        specifier: ^1.2.1
+        version: 1.2.1
+      '@atlaskit/pragmatic-drag-and-drop-hitbox':
+        specifier: ^1.0.3
+        version: 1.0.3
       '@heroicons/vue':
         specifier: ^2.1.4
         version: 2.1.4(vue@3.4.31(typescript@5.4.5))
@@ -186,6 +192,12 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@atlaskit/pragmatic-drag-and-drop-hitbox@1.0.3':
+    resolution: {integrity: sha512-/Sbu/HqN2VGLYBhnsG7SbRNg98XKkbF6L7XDdBi+izRybfaK1FeMfodPpm/xnBHPJzwYMdkE0qtLyv6afhgMUA==}
+
+  '@atlaskit/pragmatic-drag-and-drop@1.2.1':
+    resolution: {integrity: sha512-gW2wJblFAeg94YXITHg0YdhFM2nmFAdDmX0LKYBIm79yEbIrOiuHHukgSjII07M4U5JpJ0Ff/4BaADjN23ix+A==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -1205,6 +1217,9 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+
+  bind-event-listener@3.0.0:
+    resolution: {integrity: sha512-PJvH288AWQhKs2v9zyfYdPzlPqf5bXbGMmhmUIY9x4dAUGIWgomO771oBQNwJnMQSnUIXhKu6sgzpBRXTlvb8Q==}
 
   birpc@0.2.17:
     resolution: {integrity: sha512-+hkTxhot+dWsLpp3gia5AkVHIsKlZybNT5gIYiDlNzJrmYPcTM9k5/w2uaj3IPpd7LlEYpmCj4Jj1nC41VhDFg==}
@@ -2415,6 +2430,9 @@ packages:
     peerDependencies:
       vue: '>= 3.2.0'
 
+  raf-schd@4.0.3:
+    resolution: {integrity: sha512-tQkJl2GRWh83ui2DiPTJz9wEiMN20syf+5oKfB03yYP7ioZcJwsIK8FjrtLwH1m7C7e+Tt2yYBlrOpdT+dyeIQ==}
+
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
 
@@ -2998,6 +3016,17 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
     optional: true
+
+  '@atlaskit/pragmatic-drag-and-drop-hitbox@1.0.3':
+    dependencies:
+      '@atlaskit/pragmatic-drag-and-drop': 1.2.1
+      '@babel/runtime': 7.24.7
+
+  '@atlaskit/pragmatic-drag-and-drop@1.2.1':
+    dependencies:
+      '@babel/runtime': 7.24.7
+      bind-event-listener: 3.0.0
+      raf-schd: 4.0.3
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -4200,6 +4229,8 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
+  bind-event-listener@3.0.0: {}
+
   birpc@0.2.17: {}
 
   brace-expansion@1.1.11:
@@ -5369,6 +5400,8 @@ snapshots:
       vue: 3.4.31(typescript@5.4.5)
     transitivePeerDependencies:
       - '@vue/composition-api'
+
+  raf-schd@4.0.3: {}
 
   rc9@2.1.2:
     dependencies:
