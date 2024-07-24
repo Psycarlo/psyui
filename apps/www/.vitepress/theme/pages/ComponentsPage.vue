@@ -139,7 +139,8 @@
     {
       title: 'Draggable',
       href: '/docs/common/draggable',
-      img: '/images/components/draggable.webp'
+      img: '/images/components/draggable.webp',
+      soon: true
     },
     {
       title: 'Kbd',
@@ -188,13 +189,18 @@
     },
     {
       title: 'Progress Bar',
-      href: '/docs/common/progress-bar',
+      href: '/docs/visualizations/progress-bar',
       img: '/images/components/progress-bar.webp'
     },
     {
       title: 'Progress Circle',
-      href: '/docs/common/progress-circle',
+      href: '/docs/visualizations/progress-circle',
       img: '/images/components/progress-circle.webp'
+    },
+    {
+      title: 'Progress Semicircle',
+      href: '/docs/visualizations/progress-semicircle',
+      img: '/images/components/progress-semicircle.webp'
     },
     {
       title: 'Spark Area Chart',
@@ -223,6 +229,12 @@
       title: 'Border Beam',
       href: '/docs/trending/border-beam',
       img: '/images/components/border-beam.webp'
+    },
+    {
+      title: 'Globe',
+      href: '/docs/trending/globe',
+      img: '/images/components/globe.webp',
+      soon: true
     },
     {
       title: 'Letter Pullup',

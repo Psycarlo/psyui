@@ -20,6 +20,10 @@
           <div
             v-if="field.state === 'over' && field.edge"
             class="bg-brand-primary absolute z-10 h-[2px] w-full"
+            :class="{
+              '-top-[5px]': field.edge === 'top',
+              '-bottom-[5px]': field.edge === 'bottom'
+            }"
           />
         </div>
       </div>

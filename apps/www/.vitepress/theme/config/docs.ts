@@ -60,11 +60,15 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: 'Progress Bar',
-          href: '/docs/common/progress-bar'
+          href: '/docs/visualizations/progress-bar'
         },
         {
           title: 'Progress Circle',
-          href: '/docs/common/progress-circle'
+          href: '/docs/visualizations/progress-circle'
+        },
+        {
+          title: 'Progress Semicircle',
+          href: '/docs/visualizations/progress-semicircle'
         },
         {
           title: 'Spark Area Chart',
@@ -92,6 +96,11 @@ export const docsConfig: DocsConfig = {
           title: 'Border Beam',
           href: '/docs/trending/border-beam',
           label: 'New'
+        },
+        {
+          title: 'Globe',
+          href: '/docs/trending/globe',
+          label: 'Soon'
         },
         {
           title: 'Letter Pullup',

@@ -20,6 +20,7 @@
     "@vueuse/core": "^10.11.0",
     "@vueuse/motion": "^2.2.3",
     "animejs": "^3.2.2",
+    "cobe": "^0.6.3",
     "magic-string": "^0.30.10",
     "qr-code-styling": "1.6.0-rc.1",
     "radix-vue": "^1.9.1",

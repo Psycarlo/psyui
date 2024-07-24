@@ -1,8 +1,8 @@
 <template>
-  <div :class="progressCircleClass">
+  <div :class="progressSemicircleClass">
     <svg
       :width="props.radius * 2"
-      :height="props.radius * 2"
+      :height="props.radius + props.strokeWidth"
       :view-box="`0 0 ${props.radius * 2} ${props.radius * 2}`"
       :aria-label="`progress bar ${props.value}%`"
       role="progressbar"
@@ -16,24 +16,26 @@
         :cx="props.radius"
         :cy="props.radius"
         :stroke-width="props.strokeWidth"
+        :stroke-dasharray="`${circumference} ${circumference}`"
+        :stroke-dashoffset="-circumference / 2"
         fill="transparent"
         stroke-linecap="round"
-        :class="circleClass"
+        :class="semicircleClass"
       />
       <circle
-        v-if="safeValue >= 0"
+        v-if="safeValue > 0"
         :r="normalizedRadius"
         :cx="props.radius"
         :cy="props.radius"
         :stroke-width="props.strokeWidth"
-        :stroke-dasharray="`${circumference} ${circumference}`"
+        :stroke-dasharray="`${circumference}`"
         :stroke-dashoffset="offset"
         fill="transparent"
         stroke-linecap="round"
         :class="progressClass"
       />
     </svg>
-    <div class="absolute inset-0 flex items-center justify-center">
+    <div class="absolute inset-x-0 top-[38%] flex items-center justify-center">
       <slot />
     </div>
   </div>
@@ -43,7 +45,7 @@
   import { tv } from 'tailwind-variants'
   import { type HTMLAttributes, computed, ref, watch, toRef } from 'vue'
 
-  type ProgressBarProps = {
+  type ProgressSemicircleProps = {
     value?: number
     radius?: number
     strokeWidth?: number
@@ -51,24 +53,22 @@
     class?: HTMLAttributes['class']
   }
 
-  const props = withDefaults(defineProps<ProgressBarProps>(), {
+  const props = withDefaults(defineProps<ProgressSemicircleProps>(), {
     value: 0,
     radius: 32,
     strokeWidth: 6,
     max: 100
   })
 
-  const progressCircleClass = computed(() =>
-    tv({
-      base: 'relative'
-    })(props)
+  const progressSemicircleClass = computed(() =>
+    tv({ base: 'relative' })(props)
   )
 
-  const circleClass = computed(() => tv({ base: 'opacity-20' })(props))
+  const semicircleClass = computed(() => tv({ base: 'opacity-20' })(props))
 
   const progressClass = computed(() =>
     tv({
-      base: 'transform-gpu transition-all duration-500 ease-in-out'
+      base: `origin-bottom -translate-y-[${props.strokeWidth * 2}px] rotate-180 transform-gpu transition-all duration-500 ease-in-out`
     })(props)
   )
 
@@ -77,7 +77,7 @@
   }
 
   function calculateOffset(safeValue: number) {
-    return circumference - (safeValue / props.max) * circumference
+    return circumference - (safeValue / props.max) * (circumference / 2)
   }
 
   const valueRef = toRef(props, 'value')
