@@ -33,6 +33,9 @@
         fill="transparent"
         stroke-linecap="round"
         :class="progressClass"
+        :style="{
+          transform: `translateY(-${props.strokeWidth * 2}px) rotate(180deg)`
+        }"
       />
     </svg>
     <div class="absolute inset-x-0 top-[38%] flex items-center justify-center">
@@ -68,7 +71,7 @@
 
   const progressClass = computed(() =>
     tv({
-      base: `origin-bottom -translate-y-[${props.strokeWidth * 2}px] rotate-180 transform-gpu transition-all duration-500 ease-in-out`
+      base: `origin-bottom transform-gpu transition-all duration-500 ease-in-out`
     })(props)
   )
 
