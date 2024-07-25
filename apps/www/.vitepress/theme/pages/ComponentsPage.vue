@@ -153,6 +153,11 @@
       img: '/images/components/select.webp'
     },
     {
+      title: 'Skeleton',
+      href: '/docs/common/skeleton',
+      img: '/images/components/skeleton.webp'
+    },
+    {
       title: 'Sonner',
       href: '/docs/common/sonner',
       img: '/images/components/sonner.webp'

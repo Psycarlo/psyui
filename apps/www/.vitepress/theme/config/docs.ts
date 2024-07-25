@@ -40,6 +40,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Draggable', href: '/docs/common/draggable', label: 'Soon' },
         { title: 'Kbd', href: '/docs/common/kbd' },
         { title: 'Select', href: '/docs/common/select' },
+        { title: 'Skeleton', href: '/docs/common/skeleton' },
         { title: 'Sonner', href: '/docs/common/sonner' },
         { title: 'Switch', href: '/docs/common/switch' },
         { title: 'Table', href: '/docs/common/table', label: 'Soon' },
