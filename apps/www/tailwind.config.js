@@ -70,6 +70,7 @@ export default {
         accordionUp: 'accordionUp 150ms cubic-bezier(0.87, 0, 0.13, 1)',
         borderBeam: 'borderBeam calc(var(--duration)*1s) infinite linear',
         marquee: 'marquee var(--duration) linear infinite',
+        meteor: 'meteor 5s linear infinite',
         selectHide: 'selectHide 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         selectDown: 'selectDown 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         selectLeft: 'selectLeft 150ms cubic-bezier(0.16, 1, 0.3, 1)',
@@ -93,6 +94,14 @@ export default {
         marquee: {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(calc(-100% - var(--gap)))' }
+        },
+        meteor: {
+          '0%': { transform: 'rotate(215deg) translateX(0)', opacity: 1 },
+          '70%': { opacity: 1 },
+          '100%': {
+            transform: 'rotate(215deg) translateX(-500px)',
+            opacity: 0
+          }
         },
         selectHide: {
           from: { opacity: '1' },

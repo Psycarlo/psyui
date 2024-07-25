@@ -112,6 +112,10 @@ export const docsConfig: DocsConfig = {
           href: '/docs/trending/marquee'
         },
         {
+          title: 'Meteors',
+          href: '/docs/trending/meteors'
+        },
+        {
           title: 'Number Ticker',
           href: '/docs/trending/number-ticker'
         },

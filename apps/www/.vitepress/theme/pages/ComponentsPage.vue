@@ -247,6 +247,11 @@
       img: '/images/components/marquee.webp'
     },
     {
+      title: 'Meteors',
+      href: '/docs/trending/meteors',
+      img: '/images/components/meteors.webp'
+    },
+    {
       title: 'Number Ticker',
       href: '/docs/trending/number-ticker',
       img: '/images/components/number-ticker.webp'
