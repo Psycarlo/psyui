@@ -39,6 +39,11 @@ export const docsConfig: DocsConfig = {
         { title: 'Checkbox', href: '/docs/common/checkbox' },
         { title: 'Draggable', href: '/docs/common/draggable', label: 'Soon' },
         { title: 'Kbd', href: '/docs/common/kbd' },
+        {
+          title: 'Number Input',
+          href: '/docs/common/number-input',
+          label: 'Soon'
+        },
         { title: 'Select', href: '/docs/common/select' },
         { title: 'Skeleton', href: '/docs/common/skeleton' },
         { title: 'Sonner', href: '/docs/common/sonner' },
