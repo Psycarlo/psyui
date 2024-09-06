@@ -41,7 +41,11 @@ export const docsConfig: DocsConfig = {
         { title: 'Kbd', href: '/docs/common/kbd' },
         {
           title: 'Number Input',
-          href: '/docs/common/number-input',
+          href: '/docs/common/number-input'
+        },
+        {
+          title: 'Pin Input',
+          href: '/docs/common/pin-input',
           label: 'Soon'
         },
         { title: 'Select', href: '/docs/common/select' },
@@ -50,6 +54,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Switch', href: '/docs/common/switch' },
         { title: 'Table', href: '/docs/common/table', label: 'Soon' },
         { title: 'Tabs', href: '/docs/common/tabs', label: 'Soon' },
+        { title: 'Text Input', href: '/docs/common/text-input' },
         {
           title: 'Tooltip',
           href: '/docs/common/tooltip',

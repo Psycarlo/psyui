@@ -148,6 +148,16 @@
       img: '/images/components/kbd.webp'
     },
     {
+      title: 'Number Input',
+      href: '/docs/common/number-input',
+      img: '/images/components/number-input.webp'
+    },
+    {
+      title: 'Pin Input',
+      href: '/docs/common/pin-input',
+      img: '/images/components/pin-input.webp'
+    },
+    {
       title: 'Select',
       href: '/docs/common/select',
       img: '/images/components/select.webp'
@@ -178,6 +188,11 @@
       href: '/docs/common/tabs',
       img: '/images/components/tabs.webp',
       soon: true
+    },
+    {
+      title: 'Text Input',
+      href: '/docs/common/text-input',
+      img: '/images/components/text-input.webp'
     },
     {
       title: 'Tooltip',

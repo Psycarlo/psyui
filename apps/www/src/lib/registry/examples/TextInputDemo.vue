@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-3">
-    <TextInput v-model="textInputValue1" />
+    <TextInput v-model="textInputValue1" placeholder="Your email..." />
     <TextInput v-model="textInputValue2" variant="outline" />
   </div>
 </template>

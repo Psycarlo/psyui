@@ -18,14 +18,14 @@
 
   const textInputClass = computed(() =>
     tv({
-      base: '',
+      base: 'text-brand-dark placeholder:text-brand-gray-700 w-full truncate rounded-md px-3 py-2 text-sm shadow-sm outline-none',
       variants: {
         variant: {
-          filled: '',
-          outline: ''
+          filled: 'bg-brand-gray-100',
+          outline: 'border-brand-gray-300 border'
         }
       }
-    })
+    })(props)
   )
 
   const model = defineModel({ type: String })
