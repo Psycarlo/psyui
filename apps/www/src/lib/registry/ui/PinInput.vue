@@ -25,7 +25,7 @@
 
   const pinInputClass = computed(() =>
     tv({
-      base: 'border-brand-gray-300 size-10 rounded-md border text-center'
+      base: 'border-brand-gray-300 focus:outline-brand-primary size-10 rounded-md border text-center'
     })()
   )
 

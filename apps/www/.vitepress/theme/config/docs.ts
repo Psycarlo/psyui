@@ -45,8 +45,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: 'Pin Input',
-          href: '/docs/common/pin-input',
-          label: 'Soon'
+          href: '/docs/common/pin-input'
         },
         { title: 'Select', href: '/docs/common/select' },
         { title: 'Skeleton', href: '/docs/common/skeleton' },

@@ -1,7 +1,7 @@
 ---
 title: Select
 description: Choose one item from a list of options.
-primitive: https://www.shadcn-vue.com/docs/components/select.html
+primitive: https://www.radix-vue.com/components/select
 ---
 
 <ComponentPreview name="Select" />

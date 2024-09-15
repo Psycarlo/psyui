@@ -1,6 +1,7 @@
 ---
 title: Number Input
 description: User inputs a number.
+primitive: https://www.radix-vue.com/components/number-field.html
 ---
 
 <ComponentPreview name="NumberInput" />
