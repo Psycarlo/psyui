@@ -186,8 +186,7 @@
     {
       title: 'Tabs',
       href: '/docs/common/tabs',
-      img: '/images/components/tabs.webp',
-      soon: true
+      img: '/images/components/tabs.webp'
     },
     {
       title: 'Text Input',

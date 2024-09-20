@@ -53,7 +53,7 @@
       variants: {
         variant: {
           line: 'border-brand-gray-300 flex justify-start border-b',
-          solid: 'inline-flex justify-center rounded-md p-1'
+          solid: 'bg-brand-primary inline-flex justify-center rounded-md p-1'
         }
       }
     })(props)

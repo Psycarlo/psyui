@@ -52,7 +52,7 @@ export const docsConfig: DocsConfig = {
         { title: 'Sonner', href: '/docs/common/sonner' },
         { title: 'Switch', href: '/docs/common/switch' },
         { title: 'Table', href: '/docs/common/table', label: 'Soon' },
-        { title: 'Tabs', href: '/docs/common/tabs', label: 'Soon' },
+        { title: 'Tabs', href: '/docs/common/tabs' },
         { title: 'Text Input', href: '/docs/common/text-input' },
         {
           title: 'Tooltip',
