@@ -264,7 +264,7 @@
     <h2 class="max-w-2xl text-3xl font-bold">
       Vue community builds with PsyUI
     </h2>
-    <div class="mt-10 grid grid-cols-3 gap-4">
+    <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
       <Card class="flex flex-col gap-4">
         <div class="flex items-center gap-3">
           <div class="h-10 w-10 rounded-full bg-slate-200"></div>
@@ -348,7 +348,7 @@
   <section class="mx-auto flex max-w-screen-xl flex-col gap-2 px-4 py-20">
     <span class="text-brand-primary font-semibold">Thank you so much</span>
     <h2 class="max-w-2xl text-3xl font-bold">Sponsor this project</h2>
-    <div class="mt-10 flex gap-6">
+    <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
       <Card class="flex w-fit flex-col items-center gap-2 p-2 pb-4">
         <ClientQRCode
           value="bitcoin:bc1qzsdges0lm34jkjfydgltr6jqnuxcjrj7rapuyy"
