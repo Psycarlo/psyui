@@ -1,5 +1,5 @@
 <template>
-  <PinInputRoot class="flex items-center gap-1.5">
+  <PinInputRoot v-model="model" class="flex items-center gap-1.5">
     <PinInputInput
       v-for="(id, index) in props.characters"
       :key="id"
@@ -25,9 +25,9 @@
 
   const pinInputClass = computed(() =>
     tv({
-      base: 'border-brand-gray-300 focus:outline-brand-primary size-10 rounded-md border text-center'
+      base: 'border-brand-gray-300 focus:ring-brand-primary size-10 rounded-md border text-center outline-none focus:ring-2'
     })()
   )
 
-  const model = defineModel({ type: Array })
+  const model = defineModel<string[]>()
 </script>
