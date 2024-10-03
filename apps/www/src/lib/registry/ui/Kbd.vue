@@ -100,7 +100,7 @@
       base: 'inline-flex select-none items-center gap-1 px-1.5',
       variants: {
         variant: {
-          default: 'rounded-md border bg-gray-50/75 shadow-sm',
+          default: 'bg-brand-gray-50/75 rounded-md border shadow-sm',
           ghost: ''
         }
       }

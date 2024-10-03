@@ -5,7 +5,7 @@
         <span> Time to stack sats </span>
       </template>
       <span
-        class="rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700"
+        class="bg-brand-gray-100 text-brand-gray-700 rounded-md px-3 py-2 text-sm font-medium"
       >
         Important stuff
       </span>
@@ -15,7 +15,7 @@
         <span> Time to stack sats </span>
       </template>
       <span
-        class="inline-flex items-center gap-1 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700"
+        class="bg-brand-gray-100 text-brand-gray-700 inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium"
       >
         Dashboard information
         <InformationCircleIcon class="h-[18px] w-[18px]" />
@@ -29,7 +29,7 @@
         </span>
       </template>
       <span
-        class="inline-flex items-center gap-1 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700"
+        class="bg-brand-gray-100 text-brand-gray-1000 inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium"
       >
         <BoltIcon class="h-[18px] w-[18px]" />
       </span>

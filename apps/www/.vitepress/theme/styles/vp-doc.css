@@ -520,7 +520,7 @@
     color 0.4s,
     opacity 0.4s;
 
-  @apply text-gray-600;
+  @apply text-brand-gray-1000;
 }
 
 .vp-doc [class*='language-']:hover > button.copy + span.lang,

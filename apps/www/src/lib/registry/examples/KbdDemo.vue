@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-4">
-    <Kbd :keys="['command']" class="text-gray-500"> B </Kbd>
+    <Kbd :keys="['command']" class="text-brand-gray-900"> B </Kbd>
     <Kbd variant="ghost" :keys="['command', 'shift']"> T </Kbd>
     <Kbd :keys="['option', 'command']"> C </Kbd>
   </div>

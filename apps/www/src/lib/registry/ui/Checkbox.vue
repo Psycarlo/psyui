@@ -67,7 +67,7 @@
 
   const checkboxClass = computed(() =>
     tv({
-      base: 'text-brand-white bg-brand-white ring-brand-gray-300 data-[disabled]:text-brand-gray-400 data-[disabled]:ring-brand-gray-300 inline-flex size-5 shrink-0 appearance-none items-center justify-center rounded shadow-sm outline-none ring-1 ring-inset transition duration-100 data-[disabled]:bg-gray-100 enabled:data-[state=checked]:ring-0 enabled:data-[state=indeterminate]:ring-0 enabled:data-[state=checked]:ring-transparent enabled:data-[state=indeterminate]:ring-transparent',
+      base: 'text-brand-white bg-brand-white ring-brand-gray-300 data-[disabled]:text-brand-gray-400 data-[disabled]:ring-brand-gray-300 data-[disabled]:bg-brand-gray-100 inline-flex size-5 shrink-0 appearance-none items-center justify-center rounded shadow-sm outline-none ring-1 ring-inset transition duration-100 enabled:data-[state=checked]:ring-0 enabled:data-[state=indeterminate]:ring-0 enabled:data-[state=checked]:ring-transparent enabled:data-[state=indeterminate]:ring-transparent',
       variants: {
         variant: {
           primary:

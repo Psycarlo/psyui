@@ -2,7 +2,7 @@
   <a
     :href="link.url"
     target="_blank"
-    class="inline-flex items-center gap-2 rounded-md border border-gray-100 px-2 py-1 text-sm hover:bg-gray-50"
+    class="hover:bg-brand-gray-50 border-brand-gray-200 inline-flex items-center gap-2 rounded-md border px-2 py-1 text-sm"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
