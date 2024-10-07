@@ -18,6 +18,6 @@
 
   const checkboxState1 = ref(false)
   const checkboxState2 = ref(true)
-  const checkboxState3 = ref('indeterminate')
+  const checkboxState3 = ref<boolean | 'indeterminate'>('indeterminate')
   const checkboxState4 = ref(true)
 </script>
