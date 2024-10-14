@@ -160,7 +160,7 @@
     {
       title: 'Radio Card Group',
       href: '/docs/common/radio-card-group',
-      img: '/images/components/pin-input.webp' // TODO: Change
+      img: '/images/components/radio-card-group.webp'
     },
     {
       title: 'Select',
