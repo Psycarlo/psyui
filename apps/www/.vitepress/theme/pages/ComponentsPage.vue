@@ -158,6 +158,11 @@
       img: '/images/components/pin-input.webp'
     },
     {
+      title: 'Radio Card Group',
+      href: '/docs/common/radio-card-group',
+      img: '/images/components/pin-input.webp' // TODO: Change
+    },
+    {
       title: 'Select',
       href: '/docs/common/select',
       img: '/images/components/select.webp'

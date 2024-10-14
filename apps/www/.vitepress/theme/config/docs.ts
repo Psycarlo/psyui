@@ -47,6 +47,7 @@ export const docsConfig: DocsConfig = {
           title: 'Pin Input',
           href: '/docs/common/pin-input'
         },
+        { title: 'Radio Card Group', href: '/docs/common/radio-card-group' },
         { title: 'Select', href: '/docs/common/select' },
         { title: 'Skeleton', href: '/docs/common/skeleton' },
         { title: 'Sonner', href: '/docs/common/sonner' },
