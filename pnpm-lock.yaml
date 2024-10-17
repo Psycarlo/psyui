@@ -66,8 +66,8 @@ importers:
         specifier: ^0.30.12
         version: 0.30.12
       qr-code-styling:
-        specifier: 1.7.2
-        version: 1.7.2
+        specifier: 1.8.0
+        version: 1.8.0
       radix-vue:
         specifier: ^1.9.7
         version: 1.9.7(vue@3.4.31(typescript@5.4.5))
@@ -2449,8 +2449,8 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  qr-code-styling@1.7.2:
-    resolution: {integrity: sha512-/D1nzJHOlALJ0ePYg25oO/yEAb4FaWOfW/R05It2h4nxojND0bc3dUNOGFT+bI6vlzR7mtqcS3i/ycc6w1MyAA==}
+  qr-code-styling@1.8.0:
+    resolution: {integrity: sha512-f6DP31ae/TYWAwjaW0ds7qk+2l7BgPpLW1WDH3t8XSlwXHl8aSvyNQomQ2ra7GC3H9yyNWnjb70jw3KGkFyANw==}
     engines: {node: '>=18.18.0'}
 
   qrcode-generator@1.4.4:
@@ -5483,7 +5483,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  qr-code-styling@1.7.2:
+  qr-code-styling@1.8.0:
     dependencies:
       qrcode-generator: 1.4.4
 

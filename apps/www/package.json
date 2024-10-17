@@ -22,7 +22,7 @@
     "animejs": "^3.2.2",
     "cobe": "^0.6.3",
     "magic-string": "^0.30.12",
-    "qr-code-styling": "1.7.2",
+    "qr-code-styling": "1.8.0",
     "radix-vue": "^1.9.7",
     "tailwind-variants": "^0.2.1",
     "vue": "^3.4.31",
