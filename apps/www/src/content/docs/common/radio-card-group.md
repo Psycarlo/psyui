@@ -24,3 +24,18 @@ Copy and paste the code into your project's component directory.
 <ComponentCode name="RadioCardGroup" type="ui" />
 
 </Steps>
+
+## Usage notes
+
+For each radio you want to add to the group, use vue `slots`.
+
+```vue
+<RadioCardGroup>
+  <template #trigger1>
+    <span>Trigger</span>
+    </template>
+    <template #trigger2>
+    <span>Trigger 2</span>
+  </template>
+</RadioCardGroup>
+```
