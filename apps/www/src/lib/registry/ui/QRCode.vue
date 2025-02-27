@@ -26,7 +26,7 @@
       width: props.size,
       height: props.size,
       margin: props.margin,
-      type: 'canvas',
+      type: 'svg',
       data: props.value,
       cornersSquareOptions: {
         type: 'extra-rounded',
