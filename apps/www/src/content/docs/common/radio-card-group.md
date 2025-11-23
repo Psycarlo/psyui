@@ -33,8 +33,8 @@ For each radio you want to add to the group, use vue `slots`.
 <RadioCardGroup>
   <template #trigger1>
     <span>Trigger</span>
-    </template>
-    <template #trigger2>
+  </template>
+  <template #trigger2>
     <span>Trigger 2</span>
   </template>
 </RadioCardGroup>
